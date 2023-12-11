@@ -4,10 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your HTML Page</title>
+ <style type="text/css">
+            body {
+                text-align: center;
+                font-family: Courier New;
+            }
+            h1 {
+                color: #a0adf8;
+            }
+            input {
+                padding: 7px;
+                margin: 5px;
+                border-radius: 3px;
+                border: 1px solid #ddd;
+                caret-color: rgba(0,105,105,.5);
+            }
+            input:focus {
+                outline: 1px #0a0f0f solid;
+            }
+            form {
+                width: 300px;
+                text-align: center;
+                padding-top: 7px;
+                margin-left: 50%;
+                margin-top: 40px;
+                transform: translate(-50%);
+                border-radius: 13px;
+                transition: 1s;
+                box-shadow: 0px 0px 3px rgba(12,18,47,.1);
+            }
+            form:hover {
+                box-shadow: 0px 3px 8px rgba(12,18,47,.2),0px 4px 13px rgba(13,120,122,.2);
+            }
+            #submit-button {
+                width: 50%;
+                border-radius: 25px;
+                background: #0add0a;
+                padding: 10px;
+                margin: 14px;
+                color: #fff;
+            }
+            #submit-button:hover {
+            outline: 4px solid rgba(0,255,0,.2);
+            }
+</style>
 </head>
 <body>
-
-    <h1>Login</h1>
-
+<form action="/users/login" method="POST" accept-charset="utf-8">
+             <h1>Login</h1>
+            <div>
+                <input type="text" name="name" id="name" placeholder="Name" required/>
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Email" required/>
+            </div>
+            <div>
+                <input type="password" name="password" id="password" placeholder="Password" required/>
+            </div>
+            <div>
+                <input type="password" name="password2" id="password2" placeholder="Confirm Password" required/>
+            </div>
+            <div>
+            <input id="submit-button" type="submit" value="Register" Login/>
+            </div>
+        </form>
 </body>
 </html>
