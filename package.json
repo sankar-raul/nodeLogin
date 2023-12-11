@@ -4,8 +4,8 @@
   "description": "trying to devlop a simple user auth web ",
   "main": "node.js",
   "scripts": {
-    "start": "node node.js",
-    "dev": "nodemon node.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "sankar",
   "license": "ISC",
