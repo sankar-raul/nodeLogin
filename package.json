@@ -1,0 +1,19 @@
+{
+  "name": "nodelogin",
+  "version": "1.0.0",
+  "description": "trying to devlop a simple user auth web ",
+  "main": "node.js",
+  "scripts": {
+    "start": "node node.js",
+    "dev": "nodemon node.js"
+  },
+  "author": "sankar",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
