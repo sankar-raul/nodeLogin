@@ -1,5 +1,3 @@
-# nodeLogin
-
 # User Login System Documentation
 
 ## Overview
@@ -27,6 +25,23 @@ This documentation provides information about the user login system deployed at 
 - The user login system employs secure authentication practices to protect user data.
 
 ## Support
-For support or issues, please contact [support@userloginsystem.com](mailto:support@userloginsystem.com).
+For support or issues, please contact [raulsankar99@gmail.com](mailto:raulsankar99@gmail.com).
 
+## Local Setup
+To run the user login system locally, follow these steps:
+
+1. Run the setup script:
+    ```bash
+    sh setup.sh
+    ```
+
+2. Start the application:
+    ```bash
+    npm run start
+    ```
+
+This will initialize the necessary dependencies and launch the application locally. Visit [http://localhost:<port>](http://localhost:<port>) in your web browser to access the local instance of the user login system.
+
+## Documentation Status: Under Process
+This documentation is currently under process, and additional content will be added soon. Thank you for your understanding.
 
