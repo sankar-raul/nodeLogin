@@ -15,5 +15,18 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sankar-coding/nodeLogin.git"
+  },
+  "keywords": [
+    "user",
+    "login",
+    "system"
+  ],
+  "bugs": {
+    "url": "https://github.com/sankar-coding/nodeLogin/issues"
+  },
+  "homepage": "https://github.com/sankar-coding/nodeLogin#readme"
 }

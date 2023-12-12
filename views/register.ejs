@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your HTML Page</title>
+  <title>Register</title>
  <style type="text/css">
             body {
                 text-align: center;
@@ -32,6 +32,7 @@
                 border-radius: 13px;
                 transition: 1s;
                 box-shadow: 0px 0px 3px rgba(12,18,47,.1);
+		padding-bottom: 10px;
             }
             form:hover {
                 box-shadow: 0px 3px 8px rgba(12,18,47,.2),0px 4px 13px rgba(13,120,122,.2);
@@ -46,6 +47,18 @@
             }
             #submit-button:hover {
             outline: 4px solid rgba(0,255,0,.2);
+            }
+           #rule {
+                text-decoration: none;
+                font-size: 15px;
+                transition: 1s;
+                font-weight: 600;
+                color: #a0adf8;
+   
+            }
+            #rule:hover {
+                text-decoration: underline;
+                font-weight: 800;
             }
 </style>
 </head>
@@ -67,6 +80,7 @@
             <div>
             <input id="submit-button" type="submit" value="Register"/>
             </div>
+           <a id="rule" href="/users/login">Already have an account? <br>Login here</a>
         </form>
 </body>
 </html>

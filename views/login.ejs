@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your HTML Page</title>
+  <title>Login</title>
  <style type="text/css">
             body {
                 text-align: center;
@@ -32,6 +32,7 @@
                 border-radius: 13px;
                 transition: 1s;
                 box-shadow: 0px 0px 3px rgba(12,18,47,.1);
+		padding-bottom: 10px;
             }
             form:hover {
                 box-shadow: 0px 3px 8px rgba(12,18,47,.2),0px 4px 13px rgba(13,120,122,.2);
@@ -47,26 +48,33 @@
             #submit-button:hover {
             outline: 4px solid rgba(0,255,0,.2);
             }
+            #rule {
+                text-decoration: none;
+                font-size: 15px;
+                transition: 1s;
+                font-weight: 600;
+                color: #a0adf8;
+   
+            }
+            #rule:hover {
+                text-decoration: underline;
+                font-weight: 800;
+            }
 </style>
 </head>
 <body>
 <form action="/users/login" method="POST" accept-charset="utf-8">
              <h1>Login</h1>
             <div>
-                <input type="text" name="name" id="name" placeholder="Name" required/>
-            </div>
-            <div>
-                <input type="email" name="email" id="email" placeholder="Email" required/>
+                <input type="text" name="name" id="name" placeholder="Username or email" required/>
             </div>
             <div>
                 <input type="password" name="password" id="password" placeholder="Password" required/>
             </div>
             <div>
-                <input type="password" name="password2" id="password2" placeholder="Confirm Password" required/>
-            </div>
-            <div>
             <input id="submit-button" type="submit" value="Login"/>
             </div>
+	   <a id="rule" href="/users/register">You have no account? <br>Register here</a>
         </form>
 </body>
 </html>
