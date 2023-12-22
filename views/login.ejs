@@ -65,7 +65,7 @@
 <body>
 
 <ul>
-      <% if (typeof errors != 'undefined') { %> <% errors.forEach(error => { %>
+      <% if (typeof error != 'undefined') { %> <% errors.forEach(error => { %>
       <li><%= error.message %></li>
       <% }) %> <% } %>
     </ul>
@@ -75,13 +75,13 @@
       <li><%= messages.success_msg %></li>
       <% } %>
     </ul>
-
-    <ul>
-      <% if (messages.error) { %>
-      <li>error<%= messages.error %></li>
-      <% } %>
-    </ul>
-
+   
+   <% if (typeof msg != 'undefined') { %>
+	<ul>
+	<li> <%= msg %> </li>
+        </ul>
+<% } %>
+   
 <form action="/users/login" method="POST" accept-charset="utf-8">
              <h1>Login</h1>
             <div>
