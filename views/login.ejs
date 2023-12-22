@@ -63,10 +63,29 @@
 </style>
 </head>
 <body>
+
+<ul>
+      <% if (typeof errors != 'undefined') { %> <% errors.forEach(error => { %>
+      <li><%= error.message %></li>
+      <% }) %> <% } %>
+    </ul>
+
+    <ul>
+      <% if(messages.success_msg) { %>
+      <li><%= messages.success_msg %></li>
+      <% } %>
+    </ul>
+
+    <ul>
+      <% if (messages.error) { %>
+      <li>error<%= messages.error %></li>
+      <% } %>
+    </ul>
+
 <form action="/users/login" method="POST" accept-charset="utf-8">
              <h1>Login</h1>
             <div>
-                <input type="text" name="name" id="name" placeholder="Username or email" required/>
+                <input type="text" name="email" id="email" placeholder="Username or email" required/>
             </div>
             <div>
                 <input type="password" name="password" id="password" placeholder="Password" required/>

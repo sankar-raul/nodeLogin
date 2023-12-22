@@ -63,7 +63,15 @@
 </style>
 </head>
 <body>
-        <form action="/users/register" method="POST" accept-charset="utf-8">
+  <ul> 
+  <% if (typeof errors != 'undefined') { %>
+ <% errors.forEach(error => { %>
+ <li><%= error.message %> </li>  
+<% }) %>
+<% } %>
+</ul>
+       
+ <form action="/users/register" method="POST" accept-charset="utf-8">
              <h1>Register</h1>
             <div>
                 <input type="text" name="name" id="name" placeholder="Name" required/>
