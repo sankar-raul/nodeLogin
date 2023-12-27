@@ -87,3 +87,69 @@ body {
     opacity: .2;
     text-shadow: 0px 2px 5px rgba(0,255,255,.8);
 }
+.items {
+    display: flex;
+    flex-direction: column;
+    background: #;
+    width: clamp(70px,60%,200px);
+    padding: 5px;
+    background: linear-gradient(to left, #3498db, #6bb9f0);
+    height: 100vh;
+    overflow-y: scroll;
+}
+.item {
+    margin: 1px 0px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255,255,255,.2);
+}
+.items .item:nth-child(1) {
+    background: transparent;
+}
+
+@media (max-width: 500px) {
+    .items {
+        position: fixed;
+        top: 0;
+        left: -234px;
+        transition: 0.3s;
+    }
+
+    .slide-bar-button:hover ~ .items {
+        left: 0px;
+    }
+    .items:hover {
+        left: 0;
+        
+    }
+}
+@media ( min-width: 500px ) {
+    .items {
+        position: fixed;
+        top: 57px;
+        height: calc(100vh - 71px);
+    }
+}
+.items  a {
+    text-decoration: none;
+    color: white;
+}
+.profile-img {
+    aspect-ratio: 1 / 1;
+    width: 50px;
+    margin-left: 50%;
+    padding: 4px;
+ background: linear-gradient(45deg, #ffd86e, #fdb95e, #fd9754, #f57c5f);
+    border-radius: 50%;
+    transform: translate(-50%);
+    margin-bottom: 8px;
+}
+.profile-tab {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(20px);
+}
+.name {
+    text-align: center;
+}
