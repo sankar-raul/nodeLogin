@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    font-family: Sans-Serif;
+}
+.users-auth {
+    padding: 2px;
+    width: clamp(70px,75%,170px);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.users-auth > button {
+    padding: 7px;
+    border: none;
+    
+}
+.users-auth > button:nth-child(1) {
+    background: #0add0a;
+    color: #fff;
+    border-radius: 8px 0 0 8px;
+    position: relative;
+    transition: 1s;
+}
+.users-auth > button:nth-child(1):hover {
+    outline: 2px solid rgba(0,255,0,.5);
+}
+.users-auth > button:nth-child(2) {
+    border-radius: 0 8px 8px 0;
+}
+.title-bar {
+    display: grid;
+    width: 100vw;
+    padding: none;
+    grid-template-columns: repeat(2,1fr);
+    background: linear-gradient(to left, #3498db, #6bb9f0);
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+}
+.auth-container {
+    justify-content: end;
+    display: flex;
+}
+.title {
+    padding: 0 10px;
+}
+.dashboard-nav {
+    display: flex;
+    padding: 7px 5px;
+}
+.fa-bars {
+    padding: 1px;
+}
