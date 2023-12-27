@@ -10,6 +10,7 @@ body {
     padding: 2px;
     width: clamp(70px,75%,170px);
     display: grid;
+    margin-right: 2px;
     grid-template-columns: repeat(2,1fr);
 }
 .users-auth > button {
@@ -22,13 +23,27 @@ body {
     color: #fff;
     border-radius: 8px 0 0 8px;
     position: relative;
-    transition: 1s;
+    transition: .2s;
 }
 .users-auth > button:nth-child(1):hover {
-    outline: 2px solid rgba(0,255,0,.5);
+    outline: 5px solid rgba(0,255,0,.3);
+}
+.users-auth > button:nth-child(1):active {
+    outline: 3px solid rgba(255,255,255,.3);
 }
 .users-auth > button:nth-child(2) {
     border-radius: 0 8px 8px 0;
+    background: rgba(255,255,255,.5);
+    color: #fff;
+    transition: .2s;
+}
+.users-auth > button:nth-child(2):hover {
+    position: relative;
+    outline: 5px solid rgba(255,255,255,.3);
+}
+.users-auth > button:nth-child(2):active {
+    position: relative;
+    outline: 3px solid rgba(255,255,255,.3);
 }
 .title-bar {
     display: grid;
@@ -39,18 +54,36 @@ body {
     color: #fff;
     padding: 10px 0;
     position: sticky;
+    top: 0px;
 }
 .auth-container {
     justify-content: end;
     display: flex;
 }
 .title {
-    padding: 0 10px;
+    padding-top:6px;
+    padding-left: 10px;
 }
 .dashboard-nav {
     display: flex;
-    padding: 7px 5px;
+    padding: 2px 0px;
 }
 .fa-bars {
-    padding: 1px;
+    padding: 6px 7px;
+}
+.slide-bar-button {
+    border-radius: 6px;
+    position: relative;
+    font-size: 20px;
+    transition: .3s;
+    margin-left: 2px;
+}
+.slide-bar-button:hover {
+    background: rgba(255,255,255,.3);
+    text-shadow: 0px 2px 5px rgba(0,2,9,.3);
+}
+.slide-bar-button:active {
+    color: black;
+    opacity: .2;
+    text-shadow: 0px 2px 5px rgba(0,255,255,.8);
 }
