@@ -30,10 +30,10 @@
 <form action="/users/login" method="POST" accept-charset="utf-8">
              <h1>Login</h1>
             <div>
-                <input type="text" name="email" id="email" placeholder="Username or email" required/>
+                <input value="<%if(email!='ignore'){%><%=email%><%}%>" type="text" name="email" id="email" placeholder="Username or email" required/>
             </div>
             <div>
-                <input type="password" name="password" id="password" placeholder="Password" required/>
+                <input value="<%if(password!='ignore'){%><%=password%><%}%>" type="password" name="password" id="password" placeholder="Password" required/>
             </div>
             <div>
             <input id="submit-button" type="submit" value="Login"/>

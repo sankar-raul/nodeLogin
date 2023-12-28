@@ -40,7 +40,7 @@ app.get("/users/register",(req,res) => {
 });
 
 app.get("/users/login",(req,res) => {
-    res.render("login");
+    res.render("login",{email:"ignore",password:"ignore"});
 });
 
 app.get("/users/dashboard",(req,res) => {
@@ -80,10 +80,10 @@ console.log(mainPass + "  = " + password);
   res.redirect("/users/dashboard");
 } else {
    console.log(false);
-   res.render("login",{ msg: "Password does not match"});
+   res.render("login",{ msg: "Password does not match",email: email,password: password});
 }
 } else {
-        res.render("login",{ msg: "Account not found"});
+        res.render("login",{ msg: "Account not found",email:email,password:"ignore"});
 }
 });
 });
