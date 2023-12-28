@@ -36,7 +36,8 @@ app.get("/",(req,res) => {
 });
 
 app.get("/users/register",(req,res) => {
-    res.render("register");
+    let args = {};
+    res.render("register",{args});
 });
 
 app.get("/users/login",(req,res) => {
@@ -92,6 +93,7 @@ app.post("/users/register",async (req,res) => {
     const {name,email,password,password2} = req.body;
    //console.log({name,email,password,password2});
   let errors = [];
+ const args = req.body;
   if (!name || !email || !password || !password2) {
   errors.push({message:"Please enter all fields!"});
 }
@@ -102,7 +104,7 @@ app.post("/users/register",async (req,res) => {
  errors.push({message:"Password does not match"});
 }
 if (errors.length > 0) {
-   res.render("register",{ errors });
+   res.render("register",{ errors, args});
 } else {
  let hashedPassword = await bcrypt.hash(password,10);
   //console.log(hashedPassword);
@@ -114,7 +116,7 @@ if (errors.length > 0) {
 	//console.log(results.rows);
 if (results.rows.length > 0) {
   errors.push({message: `${email} allready exits`});
-  res.render("register",{ errors });
+  res.render("register",{ errors, args});
 } else {
   pool.query(
  `INSERT INTO users (name,email,password) VALUES ($1,$2,$3) RETURNING id,password`,[name,email,hashedPassword],(err,results) => {

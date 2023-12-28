@@ -19,16 +19,16 @@
  <form action="/users/register" method="POST" accept-charset="utf-8">
              <h1>Register</h1>
             <div>
-                <input type="text" name="name" id="name" placeholder="Name" required/>
+                <input value="<%if(args.name){%><%=args.name%><%}%>" type="text" name="name" id="name" placeholder="Name" required/>
             </div>
             <div>
-                <input type="email" name="email" id="email" placeholder="Email" required/>
+                <input value="<%if(args.email){%><%=args.email%><%}%>" type="email" name="email" id="email" placeholder="Email" required/>
             </div>
             <div>
-                <input type="password" name="password" id="password" placeholder="Password" required/>
+                <input value="<%if(args.password){%><%if(args.password.length>=6 && args.password == args.password2) {%><%=args.password%><%}%><%}%>" type="password" name="password" id="password" placeholder="Password" required/>
             </div>
             <div>
-                <input type="password" name="password2" id="password2" placeholder="Confirm Password" required/>
+                <input value="<%if(args.password){%><%if(args.password.length>=6 && args.password == args.password2) {%><%=args.password2%><%}%><%}%>" type="password" name="password2" id="password2" placeholder="Confirm Password" required/>
             </div>
             <div>
             <input id="submit-button" type="submit" value="Register"/>
