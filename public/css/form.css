@@ -1,19 +1,28 @@
-body {
+lbody {
                 text-align: center;
+		/*background: linear-gradient(to left, #3498db, #6bb9f0);*/
                 font-family: Courier New;
             }
             h1 {
-                color: #a0adf8;
+      	color: #a0adf8;
+	color: #fff;
             }
             input {
+		
                 padding: 7px;
                 margin: 5px;
                 border-radius: 3px;
-                border: 1px solid #ddd;
+                border: 1px solid rgba(255,255,255,.3);
                 caret-color: rgba(0,105,105,.5);
+		
+                background: rgba(255,255,255,.2);
+		color: #fdfdfd;
             }
+           input::placeholder {
+		color: rgba(255,255,255,.7);
+          }
             input:focus {
-                outline: 1px #0a0f0f solid;
+                outline: 1px rgba(255,255,255,.5) solid;
             }
             form {
                 width: 300px;
@@ -26,6 +35,7 @@ body {
                 transition: 1s;
                 box-shadow: 0px 3px 8px rgba(12,18,47,.2),0px 4px 13px rgba(13,120,122,.2);
                 padding-bottom: 10px;
+                background: linear-gradient(45deg, #3498db, #6bb9f0);
             }
             #submit-button {
                 width: 50%;
@@ -34,6 +44,7 @@ body {
                 padding: 10px;
                 margin: 14px;
                 color: #fff;
+                border-color: transparent;
             }
             #submit-button:hover {
             outline: 4px solid rgba(0,255,0,.2);
@@ -41,12 +52,14 @@ body {
            #rule {
                 text-decoration: none;
                 font-size: 15px;
-                transition: 1s;
-                font-weight: 600;
+                transition: .5s;
+                font-weight: 100;
                 color: #a0adf8;
+                color: white;
+                opacity: .5;
 
             }
             #rule:hover {
                 text-decoration: underline;
-                font-weight: 800;
+		opacity: 1;
             }
