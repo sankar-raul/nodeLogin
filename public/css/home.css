@@ -13,35 +13,35 @@ body {
     margin-right: 2px;
     grid-template-columns: repeat(2,1fr);
 }
-.users-auth > button {
+.bt1,.bt2 {
     padding: 7px;
     border: none;
     
 }
-.users-auth > button:nth-child(1) {
+.users-auth > .bt1 {
     background: #0add0a;
     color: #fff;
     border-radius: 8px 0 0 8px;
     position: relative;
     transition: .2s;
 }
-.users-auth > button:nth-child(1):hover {
+.users-auth > .bt1:hover {
     outline: 5px solid rgba(0,255,0,.3);
 }
-.users-auth > button:nth-child(1):active {
+.users-auth > .bt1:active {
     outline: 3px solid rgba(255,255,255,.3);
 }
-.users-auth > button:nth-child(2) {
+.users-auth > .bt2 {
     border-radius: 0 8px 8px 0;
     background: rgba(255,255,255,.5);
     color: #fff;
     transition: .2s;
 }
-.users-auth > button:nth-child(2):hover {
+.users-auth > .bt2:hover {
     position: relative;
     outline: 5px solid rgba(255,255,255,.3);
 }
-.users-auth > button:nth-child(2):active {
+.users-auth > .bt2:active {
     position: relative;
     outline: 3px solid rgba(255,255,255,.3);
 }
@@ -86,6 +86,22 @@ body {
     color: black;
     opacity: .2;
     text-shadow: 0px 2px 5px rgba(0,255,255,.8);
+}
+.hide {
+ background: none;
+ text-shadow: none;
+ box-shadow: none;
+ outline: none;
+ border-color: transparent;
+ display: hidden;
+}
+.hide:hover {
+ background: none;
+ text-shadow: none;
+ box-shadow: none;
+ outline: none;
+ border-color: transparent;
+ display: hidden;
 }
 .items {
     display: flex;
