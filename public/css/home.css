@@ -33,17 +33,17 @@ body {
 }
 .users-auth > .bt2 {
     border-radius: 0 8px 8px 0;
-    background: rgba(255,255,255,.3);
+    background: rgba(255,255,255,.2);
     color: #fff;
     transition: .2s;
 }
 .users-auth > .bt2:hover {
     position: relative;
-    outline: 5px solid rgba(255,255,255,.3);
+    outline: 4px solid rgba(255,255,255,.4);
 }
 .users-auth > .bt2:active {
     position: relative;
-    outline: 3px solid rgba(255,255,255,.3);
+    outline: 3px solid rgba(25,255,255,.4);
 }
 .title-bar {
     display: grid;
