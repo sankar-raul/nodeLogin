@@ -44,6 +44,14 @@ app.get("/users/login",(req,res) => {
     res.render("login",{email:"ignore",password:"ignore"});
 });
 
+app.get("/users",(req,res) => {
+	res.redirect("/users/login");
+});
+
+app.get("/users/logout",(req,res) => {
+     res.redirect("/");
+});
+
 app.get("/users/dashboard",(req,res) => {
     const id = req.session.userId;
     if (id) {
