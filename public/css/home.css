@@ -16,7 +16,7 @@ body {
 .bt1,.bt2 {
     padding: 7px;
     border: none;
-    
+
 }
 .users-auth > .bt1 {
     background: #0add0a;
@@ -123,28 +123,46 @@ body {
 .items .item:nth-child(1) {
     background: transparent;
 }
-
-@media (max-width: 500px) {
+.body {
+    display: flex;
+    flex-direction: row;
+}
+.nav-space {
+    width: 209px;
+    margin-top: 2px;
+    background: transparent;
+    height: calc(100vh - 59px);
+}
+.main-content {
+    width: calc(100vw - 209px);
+}
+@media ( max-width: 500px ) {
     .items {
         position: fixed;
         top: 0;
         left: -234px;
         transition: 0.3s;
     }
-
+ .main-content {
+	width: 100vw;
+    }
+ .nav-space {
+     display: none;
+ }
     .slide-bar-button:hover ~ .items {
         left: 0px;
     }
+    
     .items:hover {
         left: 0;
-        
+
     }
 }
 @media ( min-width: 500px ) {
     .items {
         position: fixed;
         top: 57px;
-        height: calc(100vh - 71px);
+        height: calc(100vh - 70px);
     }
 }
 .items  a {

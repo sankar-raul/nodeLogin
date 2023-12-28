@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-	    <link rel="website icon" href="https://i.postimg.cc/XYSJmSBn/channels4-profile.jpg" type="jpg" />
+            <link rel="website icon" href="https://i.postimg.cc/XYSJmSBn/channels4-profile.jpg" type="jpg" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">       
-	 <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="/css/home.css" />
       <link rel="stylesheet" href="/css/dashboard.css" />
         <title>Dashboard</title>
@@ -38,14 +38,20 @@
         </div>
         </div>
         </div>
- 
+        <div class="body">
+   <aside class="nav-space">
+       
+   </aside>
+   <main class="main-content">
    <h2 class="greetings"><span id="timeGreet"></span>
    <% if (user.name) { %>
-	<%= user.name %>
+        <%= user.name %>
    <% } else { %>
        Sankar
   <% } %>
 </h2>
+</main>
+</div>
     <script type="text/javascript" src="/js/greet.js"></script>
     <script type="text/javascript" src="/js/redirect.js"></script>
     </body>
