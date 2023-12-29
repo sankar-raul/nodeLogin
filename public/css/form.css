@@ -73,15 +73,13 @@ body {
                 text-decoration: none;
                 font-size: 15px;
                 transition: .5s;
-                font-weight: 100;
+                font-weight: 300;
                 color: #a0adf8;
                 color: white;
-                opacity: .7;
-
             }
             #rule:hover {
-                text-decoration: underline;
-                opacity: 1;
+                text-decoration: underline rgba(255,255,255,.5);
+		font-weight: 900;
             }
             #password, #password2 {
                 padding-right: 20px;
