@@ -1,25 +1,45 @@
-lbody {
+body {
                 text-align: center;
-		/*background: linear-gradient(to left, #3498db, #6bb9f0);*/
+                /*background: linear-gradient(to left, #3498db, #6bb9f0);*/
                 font-family: Courier New;
             }
+    #fas {
+        font-size: 11px;
+        color: rgba(255,255,255,.8);
+        position: absolute;
+        margin-top: 13px;
+        margin-left: -23.4px;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+        width: 14px;
+        padding: 0;
+        padding-top: 2px;
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+    #fas:active {
+        background: rgba(255,255,255,.4);
+        outline: 3px solid rgba(255,255,255,.2);
+        
+    }
             h1 {
-      	color: #a0adf8;
-	color: #fff;
+        color: #a0adf8;
+        color: #fff;
             }
             input {
-		
+
                 padding: 7px;
                 margin: 5px;
+                max-width: 210px;
                 border-radius: 3px;
                 border: 1px solid rgba(255,255,255,.3);
                 caret-color: rgba(0,105,105,.5);
-		
+
                 background: rgba(255,255,255,.2);
-		color: #fdfdfd;
+                color: #fdfdfd;
             }
            input::placeholder {
-		color: rgba(255,255,255,.7);
+                color: rgba(255,255,255,.7);
           }
             input:focus {
                 outline: 1px rgba(255,255,255,.5) solid;
@@ -61,5 +81,9 @@ lbody {
             }
             #rule:hover {
                 text-decoration: underline;
-		opacity: 1;
+                opacity: 1;
+            }
+            #password, #password2 {
+                padding-right: 20px;
+		max-width: 170px;
             }

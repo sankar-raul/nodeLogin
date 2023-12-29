@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	    <link rel="website icon" href="https://i.postimg.cc/XYSJmSBn/channels4-profile.jpg" type="jpg" />
+  <link rel="website icon" href="https://i.postimg.cc/XYSJmSBn/channels4-profile.jpg" type="jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Register</title>
@@ -26,14 +27,17 @@
             </div>
             <div>
                 <input value="<%if(args.password){%><%if(args.password.length>=6 && args.password == args.password2) {%><%=args.password%><%}%><%}%>" type="password" name="password" id="password" placeholder="Password" required/>
+		<i id="fas" class="fas fa-regular fa-eye" onclick="check(this, 'one')"></i>
             </div>
             <div>
                 <input value="<%if(args.password){%><%if(args.password.length>=6 && args.password == args.password2) {%><%=args.password2%><%}%><%}%>" type="password" name="password2" id="password2" placeholder="Confirm Password" required/>
+		<i id="fas" class="fas fa-regular fa-eye" onclick="check(this, 'two')"></i>
             </div>
             <div>
             <input id="submit-button" type="submit" value="Register"/>
             </div>
            <a id="rule" href="/users/login">Already have an account? <br>Login here</a>
         </form>
+<script src="/js/password.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
