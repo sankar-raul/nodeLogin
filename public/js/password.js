@@ -1,4 +1,4 @@
-function check(pass,which="one") {
+function check(pass,which) {
     let just = which == "one" ? document.getElementById("password") : document.getElementById("password2");
     if (just.type == "password") {
         pass.classList.remove("fa-eye");
@@ -12,8 +12,8 @@ function check(pass,which="one") {
 }
 function showOrHide(just) {
      if (just.type == "password") {
-    document.getElementById("password").type = "text";
+         just.type = "text";
      } else {
-    document.getElementById("password").type = "password";
+         just.type = "password";
      }
     }
