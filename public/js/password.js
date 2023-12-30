@@ -3,17 +3,10 @@ function check(pass,which) {
     if (just.type == "password") {
         pass.classList.remove("fa-eye");
         pass.classList.add("fa-eye-slash");
+	just.type = "text";
     } else {
         pass.classList.remove("fa-eye-slash");
         pass.classList.add("fa-eye");
-        
+        just.type = "password";
     }
-    showOrHide(just);
 }
-function showOrHide(just) {
-     if (just.type == "password") {
-         just.type = "text";
-     } else {
-         just.type = "password";
-     }
-    }
