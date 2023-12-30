@@ -1,27 +1,19 @@
-var identity = 0;
 function check(pass,which="one") {
-    if (identity % 2 == 0) {
+    let just = which == "one" ? document.getElementById("password") : document.getElementById("password2");
+    if (just.type == "password") {
         pass.classList.remove("fa-eye");
         pass.classList.add("fa-eye-slash");
     } else {
         pass.classList.remove("fa-eye-slash");
         pass.classList.add("fa-eye");
+        
     }
-    showOrHide(which);
-    identity++;
+    showOrHide(just);
 }
-function showOrHide(which="one") {
-    if (which == "one") {
-     if (identity % 2 == 0) {
+function showOrHide(just) {
+     if (just.type == "password") {
     document.getElementById("password").type = "text";
      } else {
     document.getElementById("password").type = "password";
      }
-    } else {
-        if (identity % 2 == 0) {
-    document.getElementById("password2").type = "text";
-     } else {
-    document.getElementById("password2").type = "password";
-     }
     }
-}
