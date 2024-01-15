@@ -57,8 +57,8 @@ input:focus {
     text-align: center;
     padding-top: 7px;
     margin-left: 50%;
-    margin-top: 30%;
-    transform: translate(-50%);
+    margin-top: 10%;
+    transform: translate(-50%,0%);
     display: flex;
     flex: wrap;
     justify-content: center;

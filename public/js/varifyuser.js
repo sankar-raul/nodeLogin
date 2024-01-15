@@ -70,7 +70,6 @@ if (args.length > 0) {
    location.href = "/users/dashboard";
   },3000);
     } else if (data.msg === "pdm") {
-    alert("Incorrect password");
     incorrect();
   } else {
      alert("Account not found");
@@ -123,13 +122,14 @@ password.onfocus = invalid(password);
 }
 let pop2,b = 0;
 const incorrect = () => {
+    invalid(document.getElementById("password"));
     if (b == 0) {
         pop2 = new Pop();
         pop2.body = "Opps! incorrect password";
-        pop2.show();
+        pop2.show(800);
         b = 1;
     } else {
-        pop2.show();
+        pop2.show(800);
     }
 }
 
