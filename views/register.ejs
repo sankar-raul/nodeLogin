@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="website icon" href="https://i.postimg.cc/XYSJmSBn/channels4-profile.jpg" type="jpg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Register</title>
- <link rel="stylesheet" href="/css/form.css" />
+    <link rel="website icon" href="https://i.postimg.cc/XYSJmSBn/channels4-profile.jpg" type="jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/form.css" />
+            <script src="/js/class/popup.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-  <ul> 
-  <% if (typeof errors != 'undefined') { %>
- <% errors.forEach(error => { %>
- <li><%= error.message %> </li>  
-<% }) %>
-<% } %>
-</ul>
-       
- <form action="/users/register" method="POST" accept-charset="utf-8">
-             <h1>Register</h1>
-            <div>
-                <input value="<%if(args.name){%><%=args.name%><%}%>" type="text" name="name" id="name" placeholder="Name" required/>
+
+    <div id="form" action="/users/register" method="POST" accept-charset="utf-8">
+        <h1>Register</h1>
+        <div class="container">
+            <div class="inputBox">
+                <input onkeyup="checkit(this)" type="text" name="email" id="email" required />
+                <i onmouseover="focusElement(this)" name="email" id="user" class="i">username</i>
             </div>
-            <div>
-                <input value="<%if(args.email){%><%=args.email%><%}%>" type="email" name="email" id="email" placeholder="Email" required/>
+
+            <div class="inputBox">
+                <input onkeyup="checkit(this)" type="password" name="password" id="password" required />
+                <i onmouseover="focusElement(this)" name="password" id="pass" class="i">password</i>
+                <i id="fas" class="fas fa-regular fa-eye" onclick="check(this, 'one')"></i>
             </div>
-            <div>
-                <input value="<%if(args.password){%><%if(args.password.length>=6 && args.password == args.password2) {%><%=args.password%><%}%><%}%>" type="password" name="password" id="password" placeholder="Password" required/>
-		<i id="fas" class="fas fa-regular fa-eye" onclick="check(this, 'one')"></i>
-            </div>
-            <div>
-                <input value="<%if(args.password){%><%if(args.password.length>=6 && args.password == args.password2) {%><%=args.password2%><%}%><%}%>" type="password" name="password2" id="password2" placeholder="Confirm Password" required/>
-		<i id="fas" class="fas fa-regular fa-eye" onclick="check(this, 'two')"></i>
-            </div>
-            <div>
-            <input id="submit-button" type="submit" value="Register"/>
-            </div>
-           <a id="rule" href="/users/login">Already have an account? <br>Login here</a>
-        </form>
-<script src="/js/password.js" type="text/javascript" charset="utf-8"></script>
-</body>
+        </div>
+        <div>
+            <button id="submit-button" value="Login">Login</button>
+        </div>
+        <div>
+            <a id="rule" href="/users/login">Already have an account? <br>Login here</a>
+        </div>
+        </div>
+        <script src="/js/password.js" type="text/javascript" charset="utf-8"></script>
+            <script src="/js/eruda.js"></script>
+    <script>
+        eruda.init();
+    </script>
+    <script src="/js/register.js" type="text/javascript" charset="utf-8"></script>
+    </body>
 </html>

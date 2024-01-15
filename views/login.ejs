@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="website icon" href="https://i.postimg.cc/XYSJmSBn/channels4-profile.jpg" type="jpg" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>Login</title>
- <link rel="stylesheet" href="/css/form.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="website icon" href="https://i.postimg.cc/XYSJmSBn/channels4-profile.jpg" type="jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Login</title>
+        <script src="/js/class/popup.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="/css/poup.css" type="text/css" media="all" />
 </head>
 <body>
+    <!-- *** Space for animation ***-->
+<div id="popupbox">
+    <img class="robo" src="/res/robo.png"/>
+    <div class="extra">
+        <p class="redirect">redirecting...</p>
+    </div>
+<div id="articles">
+    <p>It's look like you previously logged in</p>
+    </div>
+</div>
 
-<ul>
-      <% if (typeof error != 'undefined') { %> <% errors.forEach(error => { %>
-      <li><%= error.message %></li>
-      <% }) %> <% } %>
-    </ul>
-
-    <ul>
-      <% if(messages.success_msg) { %>
-      <li><%= messages.success_msg %></li>
-      <% } %>
-    </ul>
-
-   <% if (typeof msg != 'undefined') { %>
-        <ul>
-        <li> <%= msg %> </li>
-        </ul>
-<% } %>
-
-<form action="/users/login" method="POST" accept-charset="utf-8">
-             <h1>Login</h1>
-            <div>
-                <input value="<%if(email!='ignore'){%><%=email%><%}%>" type="text" name="email" id="email" placeholder="Username or email" required/>
-            </div>
-            <div>
-                <input value="<%if(password!='ignore'){%><%=password%><%}%>" type="password" name="password" id="password" placeholder="Password" required/>
-                <i id="fas" class="fas fa-regular fa-eye" onclick="check(this, 'one')"></i>
-            </div>
-            <div>
-            <input id="submit-button" type="submit" value="Login"/>
-            </div>
-           <a id="rule" href="/users/register">Dont't have an account? <br>Register here</a>
-        </form>
+    <!-- ***************************-->
+    <div id="form" accept-charset="utf-8">
+        <h1>Login</h1>
+        <div class="container">
+        <div class="inputBox">
+            <input onkeyup="checkit(this)" type="text" name="email" id="email" required />
+        <i onmouseover="focusElement(this)" name="email" id="user" class="i">username</i>
+        </div>
+        
+        <div class="inputBox">
+            <input onkeyup="checkit(this)" type="password" name="password" id="password" required />
+                <i onmouseover="focusElement(this)" name="password" id="pass" class="i">password</i>
+            <i id="fas" class="fas fa-regular fa-eye" onclick="check(this, 'one')"></i>
+        </div>
+        </div>
+        <div>
+            <button id="submit-button" value="Login">Login</button>
+        </div>
+        <div>
+        <a id="rule" href="/users/register">Dont't have an account? <br>Register here</a>
+        </div>
+    </div>
     <script src="/js/password.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/varifyuser.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/focus.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/eruda.js"></script>
+    <script>
+        eruda.init();
+    </script>
+
 </body>
 </html>

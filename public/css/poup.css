@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'lemon';
+    src: url('/res/fonts/lemon.ttf')
+}
+
+:root {
+    --popboxwidth: clamp(320px,60%,460px);
+}
+#popupbox {
+    position: fixed;
+    top: 30%;
+    display: none;
+    left: calc(50vw - ((var(--popboxwidth)) / 2));
+    transform: ;
+    aspect-ratio: 2 / 1.1;
+    width: var(--popboxwidth);
+    background: rgba(234,243,254,.3);
+    backdrop-filter: blur(45px);
+    border-radius: 10px;
+    text-align: left;
+    z-index: 3;
+    box-shadow: 2px 3px 8px rgba(0,5,4,.2);
+}
+@keyframes an {
+    0%{
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+#popupbox .robo {
+    width: 100px;
+    position: absolute;
+    filter: contrast(110%) drop-shadow(3px 2px 3px rgba(2,5,5,.3)) hue-rotate(5deg) brightness(101%);
+    animation: toggle 1s ease-in-out infinite;
+    left: 37%;
+    transform: translate(-50%);
+}
+@keyframes toggle {
+    0%,100% {
+        margin-top: -3px;
+        filter: hue-rotate(320deg);
+    } 50% {
+        margin-top: 5px;
+        filter: hue-rotate(378deg);
+    }
+}
+#articles {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    backdrop-filter: contrast(85%) hue-rotate(0deg) brightness(110%);
+    background-image: linear-gradient(25deg,rgba(255, 13, 130,.2),transparent);
+    padding-bottom: .005%;
+    border-radius: 10px;
+    font-size: 20px;
+    justify-content: center;
+    border-top: 1px solid rgba(255,255,255,.3);
+    font-family: 'lemon', cursive;
+    align-items: center;
+    height: calc(100% - 100px);
+    font-weight: 900;
+    text-shadow: 0px 2px 0px rgba(255,255,255,.3);
+}
+#articles p {
+    color: rgba(251,25,44,.5);
+    border-radius: 6px;
+    opacity: .6;
+    padding-top: 9px;
+    padding-bottom: 0px;
+    font-weight: 700;
+}
+.extra {
+    width: 100%;
+    height: 100px;
+    text-align: right;
+    filter: contrast(159%);
+}
+@keyframes anim {
+    0%,100% {
+        filter: hue-rotate(43deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+.extra p {
+    background: linear-gradient(90deg,cyan,lime);
+    animation: anim 3s linear infinite;
+    display: inline-block;
+    color: transparent;
+    font-family: 'lemon';
+    padding-top: 20px;
+    padding-right: 20px;
+    text-shadow: 0px 3px 3px rgba(0,0,0,.5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

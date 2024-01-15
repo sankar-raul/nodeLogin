@@ -7,6 +7,7 @@
          <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="/css/home.css" />
       <link rel="stylesheet" href="/css/dashboard.css" />
+       <script src="/js/class/popup.js" type="text/javascript" charset="utf-8"></script>
         <title>Dashboard</title>
     </head>
     <body>
@@ -29,12 +30,13 @@
             <a class="item" href="#">item</a>
             <a class="item" href="#">item</a>
             <a class="item" href="#">item</a>
-        </div>                                                                                                                                     <p class="title">Home</p>
+        </div>
+        <p class="title">Home</p>
       </nav>
       <div class="auth-container">
       <div class="users-auth">
         <button class="hide"></button>
-        <button class="bt2" style="border-radius:10px" onclick="goto('/users/logout')">Logout</button>
+        <button class="bt2" style="border-radius:10px" onclick="logout()">Logout</button>
         </div>
         </div>
         </div>
@@ -44,15 +46,17 @@
    </aside>
    <main class="main-content">
    <h2 class="greetings"><span id="timeGreet"></span>
-   <% if (user.name) { %>
-        <%= user.name %>
-   <% } else { %>
-       Sankar
-  <% } %>
+   <span id="name">Sankar</span>
 </h2>
 </main>
 </div>
     <script type="text/javascript" src="/js/greet.js"></script>
+    <script src="/js/dashboard.js" type="text/javascript" charset="utf-8">
+    </script>
     <script type="text/javascript" src="/js/redirect.js"></script>
+    <script src="/js/eruda.js"></script>
+    <script>
+        eruda.init();
+    </script>
     </body>
 </html>
