@@ -95,11 +95,18 @@ return "end";
   }
   }
 });
-
+let c = 0,pop4;
 const blankEmail = () => {
-alert("blankEmail");
 const email = document.getElementById('email');
 email.onfocus = invalid(email);
+if (c == 0) {
+    pop4 = new Pop();
+    pop4.body = "Opps! username must not be blank";
+    pop4.show(800);
+    c = 1;
+} else {
+    pop4.show(800);
+}
 }
 let a = 0;
 let pop1;
@@ -107,17 +114,16 @@ const invalidEmail = () => {
 if (a == 0) { 
 pop1 = new Pop();
 pop1.body = "Invalid email!";
-pop1.show();
+pop1.show(800);
 a=1;
 } else {
-    pop1.show();
+    pop1.show(800);
 }
 const email = document.getElementById('email');
 email.onfocus = invalid(email);
 }
 const blankPass = () => {
     const password = document.getElementById('password');
-alert("blankPass");
 password.onfocus = invalid(password);
 }
 let pop2,b = 0;
@@ -132,4 +138,5 @@ const incorrect = () => {
         pop2.show(800);
     }
 }
+
 

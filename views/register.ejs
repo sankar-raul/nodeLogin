@@ -15,14 +15,23 @@
         <h1>Register</h1>
         <div class="container">
             <div class="inputBox">
-                <input onkeyup="checkit(this)" type="text" name="email" id="email" required />
-                <i onmouseover="focusElement(this)" name="email" id="user" class="i">username</i>
+                <input onkeyup="checkit(this)" type="text" name="username" id="username" required />
+                <i onmouseover="focusElement(this)" name="email" id="name" class="i">username</i>
             </div>
-
+            <div class="container">
+                <div class="inputBox">
+                    <input onkeyup="checkit(this)" type="text" name="email" id="email" required />
+                    <i onmouseover="focusElement(this)" name="email" id="user" class="i">username</i>
+                </div>
             <div class="inputBox">
                 <input onkeyup="checkit(this)" type="password" name="password" id="password" required />
                 <i onmouseover="focusElement(this)" name="password" id="pass" class="i">password</i>
                 <i id="fas" class="fas fa-regular fa-eye" onclick="check(this, 'one')"></i>
+            </div>
+            <div class="inputBox">
+                <input onkeyup="checkit(this)" type="password" name="password2" id="password2" required />
+                <i onmouseover="focusElement(this)" name="password2" id="pass2" class="i">confirm</i>
+                <i id="fas" class="fas fa-regular fa-eye" onclick="check(this, 'two')"></i>
             </div>
         </div>
         <div>
@@ -38,5 +47,6 @@
         eruda.init();
     </script>
     <script src="/js/register.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/focus.js"></script>
     </body>
 </html>
