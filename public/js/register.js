@@ -79,5 +79,5 @@ const email = document.getElementById("email");
     const list = [email,username,password,password2];
     
     for (const l of list) {
-        l.onblur = () => checkAllFields();
+        l.oninput = () => checkAllFields();
     }
