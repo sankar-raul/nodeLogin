@@ -125,31 +125,34 @@ app.post("/users/register", async (req, res) => {
     const {
         name, email, password, password2
     } = req.body;
+    const errors = [];
     //console.log({name,email,password,password2});
-    let errors = [];
     const args = req.body;
     if (!name || !email || !password || !password2) {
-        errors.push({
-            message: "Please enter all fields!"
-        });
+        // errors.push({
+        //     message: "Please enter all fields!"
+        // });
+   
     }
     if (password.length < 6) {
-        errors.push({
-            message: "Password should be atleast 6 charecter"
-        });
+        // errors.push({
+        //     message: "Password should be atleast 6 charecter"
+        // });
     }
     if (password != password2) {
-        errors.push({
-            message: "Password does not match"
-        });
+        // errors.push({
+        //     message: "Password does not match"
+        // });
     }
     if (errors.length > 0) {
-        res.render("register", {
-            errors, args
-        });
-    } else {
+        // res.render("register", {
+        //     errors, args
+        // });
+    } 
+    else {
         let hashedPassword = await bcrypt.hash(password, 10);
         //console.log(hashedPassword);
+
         pool.query(
             `SELECT * FROM users WHERE email = $1`, [email], (err, results) => {
                 if (err) {
@@ -157,21 +160,14 @@ app.post("/users/register", async (req, res) => {
                 } else {
                     //console.log(results.rows);
                     if (results.rows.length > 0) {
-                        errors.push({
-                            message: `${email} allready exits`
-                        });
-                        res.render("register", {
-                            errors, args
-                        });
+                        res.send({msg: `${email} allready exits`});
                     } else {
                         pool.query(
-                            `INSERT INTO users (name,email,password) VALUES ($1,$2,$3) RETURNING id,password`, [name, email, hashedPassword], (err, results) => {
+                            `INSERT INTO users (name,email,password) VALUES ($1,$2,$3)`, [name, email, hashedPassword], (err, results) => {
                                 if (err) {
-                                    throw err;
+                                    res.send({msg: "error"});
                                 }
-                                //console.log(results.rows);
-                                req.flash("success_msg", "You are now registerd please login");
-                                res.redirect("/users/login");
+                                res.send({msg: "done"});
                             }
                         );
                     }

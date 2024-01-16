@@ -15,14 +15,7 @@ function checkit(e,check=false) {
                 isTrue = true;
             } else {
                 isTrue = false;
-                // if (a == 0) {
-                //     pop4 = new Pop();
-                //     pop4.body = "Opps! password does bot match";
-                //     pop4.show(800);
-                //     a = 1;
-                // } else {
-                //     pop4.show(800);
-                // }
+                
             }
         } else {
             isTrue = false;
@@ -66,12 +59,16 @@ function checkAllFields() {
        let ok =  document.getElementById("submit-button");
        ok.classList.add("disabled");
        ok.style.background = "rgba(255,255,255,0.5)";
+       ok.name = "disabled";
     } else { 
         let op = document.getElementById("submit-button");
         op.classList.remove("disabled");
-        op.style.background = "lime";
+        op.style.background = "#0add0a";
+        op.name = "ready";
     }
+    return trueornot;
 }
+document.getElementById("submit-button").style.background = "rgba(255,255,255,0.5)";
 const email = document.getElementById("email");
     const username = document.getElementById("username");
     const password = document.getElementById("password");
@@ -81,3 +78,39 @@ const email = document.getElementById("email");
     for (const l of list) {
         l.oninput = () => checkAllFields();
     }
+    function process() {
+        if (checkAllFields()) {
+            if (a == 0) {
+                    pop4 = new Pop();
+                    pop4.body = "Opps! please check fill all fields!";
+                    pop4.show(800);
+                    a = 1;
+                } else {
+                    pop4.show(800);
+                }
+        } else {
+            register();
+        }
+
+    }
+    const submit = document.getElementById("submit-button");
+    submit.addEventListener('click', () => {
+        if (!(submit.name == "disabled")) {
+        const keys = process();
+        }
+    });
+    function register() {
+        const data = {name: list[1].value,email: list[0].value,password: list[2].value,password2: list[3].value};
+        fetch("/users/register", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        console.log(data);
+    })
+}
