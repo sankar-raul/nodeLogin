@@ -4,7 +4,7 @@
   "description": "trying to devlop a simple user auth web ",
   "main": "node.js",
   "scripts": {
-    "start": "node server.js",
+    "test": "node server.js",
     "dev": "nodemon server.js"
   },
   "author": "sankar",
