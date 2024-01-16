@@ -93,7 +93,7 @@ input:focus {
     text-decoration: underline rgba(255,255,255,.5);
     font-weight: 900;
 }
-#password, #password2, #email{
+#password, #password2, #email, #username{
     padding: 12px 10px;
     width: 90%;
     
@@ -119,4 +119,9 @@ input:focus ~ .i, input:valid ~ .i, .i:hover {
 }
 .valid {
     outline: 2px solid rgba(125,244,144,.9);
+}
+.disabled {
+    background: #fdfdfd;
+    color: #dadada;
+    
 }
