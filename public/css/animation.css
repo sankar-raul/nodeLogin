@@ -1,0 +1,29 @@
+.blooming {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    z-index: 2;
+    border: 1px solid cyan;
+    border-radius: 0 0 0 100%;
+    overflow: hidden;
+}
+.circle {
+ position: absolute;
+ border: 1px solid cyan;
+ width: 30%;
+ border-radius: 50%;
+ aspect-ratio: 1 / 1;
+ transform: translate(40%,-50%);
+ animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    0% {
+        width: 0%;
+        opacity: 1;
+    } 100% {
+        width: 100%;
+        opacity: .7;
+    }
+}

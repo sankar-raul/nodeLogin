@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    /*background: linear-gradient(to left, #3498db, #6bb9f0);*/
+    background: linear-gradient(to left, #dd7ef0, #5db2ee);
     font-family: Courier New;
 }
 #fas {
@@ -67,7 +67,7 @@ input:focus {
     transition: 1s;
     box-shadow: 0px 3px 8px rgba(12,18,47,.2),0px 4px 13px rgba(13,120,122,.2);
     padding-bottom: 30px;
-    background: linear-gradient(45deg, #3498db, #6bb9f0);
+    background: linear-gradient(-90deg, #209bb0, #73056a);
 }
 #submit-button {
     width: 50%;
