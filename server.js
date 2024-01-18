@@ -8,17 +8,6 @@ const bcrypt = require('bcryptjs');
 const session = require('express-session');
 const flash = require('express-flash');
 app.use(express.json())
-//const passport = require('passport');
-//const initializePassport = require('./passportConfig');
-
-//initializePassport(passport);
-
-/*app.get("/",(req,res) => {
-	res.send("<h1>Hello</h1>");
-});*/
-
-app.set("view engine", "ejs");
-
 app.use(express.static("public"));
 
 app.use(express.urlencoded({
@@ -30,27 +19,18 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }));
-
-//app.use(passport.initialize());
-//app.use(passport.session());
-
 app.use(flash());
-
+app.set("view engine","ejs");
 app.get("/", (req, res) => {
     res.render("index");
 });
-
 app.get("/users/register", (req, res) => {
     let args = {};
-    res.render("register", {
-        args
-    });
+    res.render("register");
 });
 
 app.get("/users/login", (req, res) => {
-    res.render("login", {
-        email: "ignore", password: "ignore"
-    });
+    res.render("login");
 });
 
 app.get("/users", (req, res) => {
@@ -62,26 +42,7 @@ app.get("/users/logout", (req, res) => {
 });
 
 app.get("/users/dashboard", (req, res) => {
-    const id = req.session.userId;
-    if (id) {
-        pool.query(
-            `SELECT * FROM users WHERE id = $1`, [id], (err, results) => {
-                if (err) {
-                    throw err;
-                }
-                if (results.rows.length > 0) {
-                    const user = results.rows[0];
-                    res.render("dashboard", {
-                        user
-                    });
-                }
-            }
-        );
-    } else {
-        res.render("dashboard", {
-            user: "Sankar"
-        });
-    }
+    res.render("dashboard");
 });
 
 app.post("/users/login", async (req, res) => {
@@ -91,13 +52,13 @@ app.post("/users/login", async (req, res) => {
     } = req.body;
 let body =  req.body;
 console.log(body);
- //   console.log(email);
     pool.query(
         `SELECT * FROM users WHERE email = $1`, [email], async (err, results) => {
             if (err) {
-                throw err;
+                console.log("Error: " + err);
             }
-            if (results.rows.length > 0) {
+            const len = await results.rows.length;
+            if (len > 0) {
                 const mainPass = results.rows[0].password;
                 console.log(mainPass + "  = " + password);
                 const isAuth = await bcrypt.compare(password, mainPass);
@@ -126,37 +87,15 @@ app.post("/users/register", async (req, res) => {
         name, email, password, password2
     } = req.body;
     const errors = [];
-    //console.log({name,email,password,password2});
     const args = req.body;
-    if (!name || !email || !password || !password2) {
-        // errors.push({
-        //     message: "Please enter all fields!"
-        // });
-   
-    }
-    if (password.length < 6) {
-        // errors.push({
-        //     message: "Password should be atleast 6 charecter"
-        // });
-    }
-    if (password != password2) {
-        // errors.push({
-        //     message: "Password does not match"
-        // });
-    }
-    if (errors.length > 0) {
-        // res.render("register", {
-        //     errors, args
-        // });
-    } 
-    else {
+    
         let hashedPassword = await bcrypt.hash(password, 10);
         //console.log(hashedPassword);
 
         pool.query(
             `SELECT * FROM users WHERE email = $1`, [email], (err, results) => {
                 if (err) {
-                    throw err;
+                    console.log("Error: " + err);
                 } else {
                     //console.log(results.rows);
                     if (results.rows.length > 0) {
@@ -171,10 +110,9 @@ app.post("/users/register", async (req, res) => {
                             }
                         );
                     }
-                }
+            }
             }
         );
-    }
 });
 
 

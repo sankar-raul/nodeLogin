@@ -16,11 +16,11 @@ function checkit(e) {
 }
 function valid(e) {
     e.style.outline = "2px solid rgba(125,244,144,.9)";
-    e.style.background = "rgba(255,255,255,.2)";
+    e.style.background = "rgba(125,244,144,.1)";
 }
 function invalid(e) {
-    e.style.outline = "2px solid rgba(225,144,144,.9)";
-    e.style.background = "rgba(255,255,255,.2)";
+    e.style.outline = "1px solid #e74c3c";
+    e.style.background = "rgba(231,76,60,.1)";
 }
 if (localStorage.getItem("user")) {
     document.getElementById("popupbox").style.display = "block";

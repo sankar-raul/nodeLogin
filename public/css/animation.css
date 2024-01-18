@@ -5,10 +5,11 @@
     width: 75%;
     aspect-ratio: 1 / 1;
     z-index: ;
-    border-radius: 0 0 0 100%;
+    border-radius: 0 0 0 0;
     overflow: hidden;
     display: flex;
     justify-content: right;
+    max-height: 100vh;
 }
 .circle {
  position: absolute;
@@ -17,7 +18,8 @@
  aspect-ratio: 1 / 1;
  transform: translate(50%,-50%);
  animation: animate 6s linear infinite;
- background: rgba(242,425,224,.6);
+ background: #0dd7;
+ filter: hue-rotate(200deg);
 }
 @keyframes animate {
     0% {

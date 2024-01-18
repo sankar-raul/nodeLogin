@@ -1,11 +1,12 @@
 body {
     text-align: center;
-    background: linear-gradient(to left, #dd7ef0, #5db2ee);
+    background: #F4F4F4;
+    color: #333333;
     font-family: Courier New;
 }
 #fas {
     font-size: 15px;
-    color: rgba(255,255,255,.8);
+    color: #ccc;
     position: absolute;
     margin-top: 10px;
     margin-left: -23.4px;
@@ -18,13 +19,12 @@ body {
     padding-bottom: 3px;
 }
 #fas:active {
-    background: rgba(255,255,255,.2);
-    outline: 5px solid rgba(255,255,255,.1);
+    background: rgba(52,152,219,.2);
+    outline: 5px solid rgba(52,152,219,.1);
 
 }
 h1 {
-    color: #a0adf8;
-    color: #fff;
+    color: #333333;
 }
 .inputBox {
     width: clamp(200px, 80%, 300px);
@@ -41,15 +41,14 @@ h1 {
 input {
     padding: 7px;
     border-radius: 3px;
-    border: 1px solid rgba(255,255,255,.3);
-    caret-color: rgba(255,255,255,.5);
-    background: rgba(255,255,255,.2);
-    color: #fdfdfd;
+    border: 1px solid #ccc7;
+    caret-color: #3498db;
+    background: #eee3;
+    color: #333333;
 }
 input:focus {
-    outline: 1px rgba(255,255,255,.5) solid;
-    border: 1px solid rgba(255,255,255,.3);
-    background: rgba(255,255,255,.2);
+    outline: 1px #3498db solid;
+    background: #eee2;
 }
 
 #form {
@@ -65,14 +64,14 @@ input:focus {
     flex-direction: column;
     border-radius: 13px;
     transition: 1s;
-    box-shadow: 5px 6px 8px rgba(12,18,47,.3),3px 3px 9px rgba(213,410,342,.3) inset;
+    box-shadow: 2px 2px 5px #fff2;
     padding-bottom: 30px;
-    background: linear-gradient(to left, #dd7ef04, #5db2ee6); 
+    background: #fefefe; 
 }
 #submit-button {
     width: 50%;
     border-radius: 25px;
-    background: #0add0a;
+    background: #27ae60;
     padding: 10px;
     margin: 14px;
     color: #fff;
@@ -86,8 +85,7 @@ input:focus {
     font-size: 15px;
     transition: .5s;
     font-weight: 300;
-    color: #a0adf8;
-    color: white;
+    color: #3498db;
 }
 #rule:hover {
     text-decoration: underline rgba(255,255,255,.5);
@@ -99,7 +97,7 @@ input:focus {
     
 }
 .i {
-    color: rgba(255,255,255,.8);
+    color: #3336;
     position: absolute;
     left: 0;
     top: 10px;
@@ -109,13 +107,13 @@ input:focus {
 }
 input:focus ~ .i, input:valid ~ .i, .i:hover {
  transform: translate(-10%,-80%);
- color: rgba(255,255,255,1);
+ color: #333;
  backdrop-filter: blur(13px);
  background: rgba(255,255,255,0);
 }
 .invalid {
     border:;
-    outline: 2px solid rgba(255,144,144,.9);
+    outline: 1px solid #e74c3c;
 }
 .valid {
     outline: 2px solid rgba(125,244,144,.9);

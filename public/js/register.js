@@ -35,11 +35,11 @@ function checkit(e,check=false) {
 }
 function valid(e) {
     e.style.outline = "2px solid rgba(125,244,144,.9)";
-    e.style.background = "rgba(255,255,255,.2)";
+    e.style.background = "rgba(125,244,144,.1)";
 }
 function invalid(e) {
-    e.style.outline = "2px solid rgba(225,144,144,.9)";
-    e.style.background = "rgba(255,255,255,.2)";
+    e.style.outline = "1px solid #e74c3c";
+    e.style.background = "rgba(231,76,60,.1)";
 }
 function checkAllFields() {
     const email = document.getElementById("email");
@@ -58,17 +58,17 @@ function checkAllFields() {
     if (trueornot) {
        let ok =  document.getElementById("submit-button");
        ok.classList.add("disabled");
-       ok.style.background = "rgba(255,255,255,0.5)";
+       ok.style.background = "#dcdcdc";
        ok.name = "disabled";
     } else { 
         let op = document.getElementById("submit-button");
         op.classList.remove("disabled");
-        op.style.background = "#0add0a";
+        op.style.background = "#27ae60";
         op.name = "ready";
     }
     return trueornot;
 }
-document.getElementById("submit-button").style.background = "rgba(255,255,255,0.5)";
+document.getElementById("submit-button").style.background = "#dcdcdc";
 const email = document.getElementById("email");
     const username = document.getElementById("username");
     const password = document.getElementById("password");
@@ -80,14 +80,7 @@ const email = document.getElementById("email");
     }
     function process() {
         if (checkAllFields()) {
-            if (a == 0) {
-                    pop4 = new Pop();
-                    pop4.body = "Opps! please check fill all fields!";
-                    pop4.show(800);
-                    a = 1;
-                } else {
-                    pop4.show(800);
-                }
+            
         } else {
             register();
         }
