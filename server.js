@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const { exec } = require('child_process');
 const PORT = process.env.PORT || 8080;
 const {
     pool
@@ -118,4 +119,16 @@ app.post("/users/register", async (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+  exec("xdg-open http://localhost:8080", (error, stdout, stderr) => {
+  if (error) {
+    console.error(`Error: ${error.message}`);
+    return;
+  }
+
+  if (stderr) {
+    console.error(`stderr: ${stderr}`);
+    return;
+  }
+
+});
 });

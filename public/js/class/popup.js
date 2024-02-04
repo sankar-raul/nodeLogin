@@ -3,7 +3,7 @@ class Pop {
         this._id = this.genarateId();
         this._body = "I love coding";
         this._font = ["lemon","/res/fonts/lemon.ttf"];
-        this.dev = "no";
+        this.process();
     }
     set font([font="lemon",src="/res/fonts/lemon.ttf"]) {
         this._font = [font,src];
@@ -18,7 +18,7 @@ class Pop {
         }
         return genaratedId;
     }
-    set id(id="loveit") {
+    set id(id=this.genaratedId()) {
         this._id = id;
     }
     get id() {
@@ -30,10 +30,7 @@ class Pop {
     set body(text=this._body) {
         this._body = text;
     }
-    show(time=3200) {
-        if (this.dev == "no") {
-        this.process();
-        }
+    show(msg=this.body ,time=3200) {
         const element = document.getElementById(this._id);
         element.style.animation = "an .1s ease-out";
         element.style.display = "block";
@@ -170,7 +167,7 @@ class Pop {
     <div class="extra">
     </div>
 <div class="articles">
-    <p>${this._body}</p>
+    <p id="bodyOfPop">${this._body}</p>
     </div>
 
     <!-- ***************************-->`;
@@ -178,7 +175,6 @@ const div = document.createElement('div');
  div.innerHTML = html;
  div.id = this._id;
  document.body.appendChild(div);
- this.dev = "yes";
     }
     
 }
