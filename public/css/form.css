@@ -44,11 +44,11 @@ input {
     border: 1px solid #ccc7;
     caret-color: #3498db;
     background: #eee3;
-    color: #333333;
+    color: #111;
 }
 input:focus {
     outline: 1px #3498db solid;
-    background: #eee2;
+    background: #eee1;
 }
 
 #form {
@@ -97,7 +97,7 @@ input:focus {
     
 }
 .i {
-    color: #3336;
+    color: #555;
     position: absolute;
     left: 0;
     top: 10px;

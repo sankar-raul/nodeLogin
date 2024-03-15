@@ -159,10 +159,26 @@ body {
     }
 }
 @media ( min-width: 500px ) {
-    .items {
+    .items { 
         position: fixed;
-        top: 57px;
-        height: calc(100vh - 70px);
+        top: 0;
+        left: -234px;
+        width: 40vw;
+        transition: 0.3s;
+    }
+ .nav-space {
+     display: none;
+ }
+ .main-content {
+     width: 100vw;
+ }
+    .slide-bar-button:hover ~ .items {
+        left: 0px;
+    }
+    
+    .items:hover {
+        left: 0;
+
     }
 }
 .items  a {
