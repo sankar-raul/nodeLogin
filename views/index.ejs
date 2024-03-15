@@ -6,24 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="/css/home.css" type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" loading="lazy">
-
+     <link rel="stylesheet" href="/css/touchui.css">
         <title>UserLoginSystem | Sankar</title>
     </head>
     <body>
         <div class="title-bar">
         <nav class="dashboard-nav">
        <i class="fas fa-regular fa-bars slide-bar-button"></i>
-               <div class="items">
-            <div class="item profile-tab">
-                    <img class="profile-img" src="/res/user.png" alt="profile pic" />
-                <p class="name">Sankar</p>
-            </div>
-            <a class="item" href="#">HOME</a>
-            <a class="item" href="#">item</a>
-            <a class="item" href="#">item</a>
-            <a class="item" href="#">item</a>
-            <a class="item" href="#">item</a>
+       
+       <div class="items">
+        <div class="nav-parent">
+            <a class="item touch-ui" href="#"><div class="list">HOME </div><i class="nav-icon fa-solid fa-house"></i></a>
+            <a class="item touch-ui" href="#"><div class="list">Search Users </div><i class="nav-icon fa-solid fa-search"></i></a>
+            <a class="item touch-ui" href="#"><div class="list">My Profile </div><i class="nav-icon fa-solid fa-user"></i></a>
+            <a class="item touch-ui" href="#"><div class="list">Settings </div><i class="nav-icon fa-solid fa-gear"></i></a>
         </div>
+        <div class="user-info profile-tab">
+            <img class="profile-img" src="/res/user.png" alt="profile pic" />
+        <p class="name">Sankar</p>
+   
+       </div>
+        </div>
+       
       <p class="title">Home</p>
       </nav>
       <div class="auth-container">
@@ -33,6 +37,7 @@
         </div>
         </div>
         </div>
+        <script src="/js/touchui.js"></script>
     <script src="/js/redirect.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>

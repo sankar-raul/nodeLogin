@@ -1,0 +1,18 @@
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    transform: scale(1) translate(-50%,-50%);
+    background: #fff4;
+    width: 40%;
+    animation: anim .6s ease-out;
+}
+.touch-ui {
+    overflow: hidden;
+}
+@keyframes anim {
+    to {
+        opacity: 0;
+        transform: scale(2) translate(-50%,-50%);
+    }
+}
