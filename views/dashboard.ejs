@@ -7,7 +7,8 @@
          <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="/css/home.css" />
       <link rel="stylesheet" href="/css/dashboard.css" />
-       <script src="/js/class/popup.js" type="text/javascript" charset="utf-8"></script>
+           <link rel="stylesheet" href="/css/touchui.css">
+
         <title>Dashboard</title>
     </head>
     <body>
@@ -15,17 +16,18 @@
         <nav class="dashboard-nav">
        <i class="fas fa-regular fa-bars slide-bar-button"></i>
                <div class="items">
-            <div class="item profile-tab">
-                    <img class="profile-img" src="https://i.postimg.cc/XYSJmSBn/channels4-profile.jpg" alt="profile pic" />
-                <p class="name">
-       Username
-</p>
-            </div>
-            <a class="item" href="#">HOME</a>
-            <a class="item" href="#">item</a>
-            <a class="item" href="#">item</a>
-            <a class="item" href="#">item</a>
-            <a class="item" href="#">item</a>
+
+        <div class="nav-parent">
+            <a class="item" href="#"><div class="list touch-ui" style="overflow:hidden">HOME </div><i class="nav-icon fa-solid fa-house"></i></a>
+            <a id="over" class="item touch-ui" href="#"><div class="list">Search Users </div><i class="nav-icon fa-solid fa-search"></i></a>
+            <a class="item touch-ui" href="#"><div class="list">My Profile </div><i class="nav-icon fa-solid fa-user"></i></a>
+            <a class="item touch-ui" href="#"><div class="list">Settings </div><i class="nav-icon fa-solid fa-gear"></i></a>
+        </div>
+                <div class="user-info profile-tab">
+            <img class="profile-img" src="/res/user.png" alt="profile pic" />
+        <p class="name">Sankar</p>
+   
+       </div>
         </div>
         <p class="title">Home</p>
       </nav>
@@ -46,6 +48,8 @@
 </h2>
 </main>
 </div>
+        <script src="/js/touchui.js"></script>
+       <script src="/js/class/popup.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="/js/greet.js"></script>
     <script src="/js/dashboard.js" type="text/javascript" charset="utf-8">
     </script>
