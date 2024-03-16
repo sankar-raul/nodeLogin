@@ -166,7 +166,7 @@ body {
     flex-direction: row;
 }
 .nav-space {
-    width: 209px;
+    width: calc(var(--navW) * 0.1);
     margin-top: 2px;
     background: transparent;
     height: calc(100vh - 59px);
@@ -208,7 +208,7 @@ body {
         transition: 0.3s;
     }
  .nav-space {
-     display: none;
+     display: block;
  }
  .main-content {
      width: 100vw;
