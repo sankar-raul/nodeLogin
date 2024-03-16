@@ -5,6 +5,7 @@
 body {
     height: 100vh;
     font-family: Sans-Serif;
+    background: #171a2b;
 }
 ::-webkit-scrollbar {
     background: transparent;
@@ -64,7 +65,7 @@ body {
     width: 100vw;
     padding: none;
     grid-template-columns: repeat(2,1fr);
-    background: linear-gradient(to left, #3498db, #6bb9f0);
+    background: linear-gradient(to bottom, #282c56,  #2f3765);
     color: #fff;
     padding: 10px 0;
     position: sticky;
@@ -125,7 +126,7 @@ body {
     width: clamp(70px,60%,200px);
     padding: 5px;
     padding-right: 0px;
-    background: linear-gradient(to left, #3498db, #6bb9f0);
+    background: linear-gradient(to bottom, #282c56,  #2f3765);
     height: 100vh;
     overflow-y: scroll;
 }
