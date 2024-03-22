@@ -1,3 +1,9 @@
+-webkit-autofill { 
+   background: rgba(39, 174, 96,0.1);
+   outline: 1px solid rgba(39, 174, 96,0.5);
+   border: none;
+   color: red
+}
 body {
     text-align: center;
     background: #020303;
@@ -113,10 +119,10 @@ input:focus ~ .i, input:valid ~ .i, .i:hover {
 }
 .invalid {
     border:;
-    outline: 1px solid #e74c3c;
+    outline: 1px solid rgba(39,176,96,.7);
 }
 .valid {
-    outline: 2px solid rgba(125,244,144,.9);
+    outline: 2px solid rgba(39,176,96,.7);;
 }
 .disabled {
     background: #fdfdfd;

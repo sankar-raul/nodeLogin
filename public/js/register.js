@@ -33,14 +33,16 @@ function checkit(e,check=false) {
         }
     }
 }
+
 function valid(e) {
-    e.style.outline = "2px solid rgba(125,244,144,.9)";
-    e.style.background = "rgba(125,244,144,.1)";
+    e.style.outline = "1px solid rgba(39, 174, 96,0.5)";
+    e.style.background = "rgba(39, 174, 96,0.1)";
 }
 function invalid(e) {
     e.style.outline = "1px solid #e74c3c";
     e.style.background = "rgba(231,76,60,.1)";
 }
+
 function checkAllFields() {
     const email = document.getElementById("email");
     const username = document.getElementById("username");
@@ -58,7 +60,7 @@ function checkAllFields() {
     if (trueornot) {
        let ok =  document.getElementById("submit-button");
        ok.classList.add("disabled");
-       ok.style.background = "#dcdcdc";
+       ok.style.background = "#ddd6";
        ok.name = "disabled";
     } else { 
         let op = document.getElementById("submit-button");
@@ -74,7 +76,7 @@ const email = document.getElementById("email");
     const password = document.getElementById("password");
     const password2 = document.getElementById("password2");
     const list = [email,username,password,password2];
-    
+
     for (const l of list) {
         l.oninput = () => checkAllFields();
     }
@@ -103,7 +105,6 @@ const email = document.getElementById("email");
         })
         .then(response => response.json())
     .then(data => {
-        console.log(data);
-        console.log(data);
+        alert(data.msg)
     })
 }
