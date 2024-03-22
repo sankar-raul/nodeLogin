@@ -29,16 +29,23 @@ For support or issues, please contact [raulsankar99@gmail.com](mailto:raulsankar
 
 ## Local Setup
 To run the user login system locally, follow these steps:
-
-1. Run the setup script:
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/sankar-raul/nodeLogin
+   ```
+2. Move to the project directory
+   ```bash
+   cd nodeLogin
+   ```
+3. Run the setup script:
     ```bash
     sh setup.sh
     ```
-2. Start postgres server
+4. Start postgres server
    ```bash
    sh pg_sql.sh start
    ```
-3. Start the application:
+5. Start the application:
     ```bash
     npm run dev
     ```
