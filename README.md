@@ -39,11 +39,11 @@ To run the user login system locally, follow these steps:
    ```
 3. Run the setup script:
     ```bash
-    sh setup.sh
+    ./setup.sh
     ```
 4. Start postgres server
    ```bash
-   sh pg_sql.sh start
+   ./pg_sql.sh start
    ```
 5. Start the application:
     ```bash
