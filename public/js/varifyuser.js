@@ -15,8 +15,8 @@ function checkit(e) {
     }
 }
 function valid(e) {
-    e.style.outline = "2px solid rgba(125,244,144,.9)";
-    e.style.background = "rgba(125,244,144,.1)";
+    e.style.outline = "1px solid rgba(39, 174, 96,0.7)";
+    e.style.background = "rgba(39, 174, 96,0.1)";
 }
 function invalid(e) {
     e.style.outline = "1px solid #e74c3c";

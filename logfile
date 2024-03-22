@@ -213,3 +213,5 @@
 2024-03-23 00:39:10.959 IST [23078] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
 2024-03-23 00:39:10.969 IST [23083] LOG:  database system was shut down at 2024-03-23 00:38:47 IST
 2024-03-23 00:39:10.989 IST [23078] LOG:  database system is ready to accept connections
+2024-03-23 00:44:10.651 IST [23081] LOG:  checkpoint starting: time
+2024-03-23 00:44:10.793 IST [23081] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.118 s, sync=0.005 s, total=0.142 s; sync files=3, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/155BC58, redo lsn=0/155BC20

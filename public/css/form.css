@@ -1,7 +1,7 @@
 body {
     text-align: center;
-    background: #F4F4F4;
-    color: #333333;
+    background: #020303;
+    color: #09ffff;
     font-family: Courier New;
 }
 #fas {
@@ -19,12 +19,12 @@ body {
     padding-bottom: 3px;
 }
 #fas:active {
-    background: rgba(52,152,219,.2);
+    background: #fff2;
     outline: 5px solid rgba(52,152,219,.1);
 
 }
 h1 {
-    color: #333333;
+    color: #f3f9f3;
 }
 .inputBox {
     width: clamp(200px, 80%, 300px);
@@ -41,10 +41,10 @@ h1 {
 input {
     padding: 7px;
     border-radius: 3px;
-    border: 1px solid #ccc7;
+    border: 1px solid #ccc2;
     caret-color: #3498db;
-    background: #eee3;
-    color: #111;
+    background: #eee1;
+    color: #fafafe;
 }
 input:focus {
     outline: 1px #3498db solid;
@@ -64,9 +64,9 @@ input:focus {
     flex-direction: column;
     border-radius: 13px;
     transition: 1s;
-    box-shadow: 2px 2px 5px #fff2;
+    box-shadow: 2px 2px 5px #000;
     padding-bottom: 30px;
-    background: #fefefe; 
+    background: #121213; 
 }
 #submit-button {
     width: 50%;
@@ -85,7 +85,7 @@ input:focus {
     font-size: 15px;
     transition: .5s;
     font-weight: 300;
-    color: #3498db;
+    color: #f0f0f0;
 }
 #rule:hover {
     text-decoration: underline rgba(255,255,255,.5);
@@ -97,7 +97,7 @@ input:focus {
     
 }
 .i {
-    color: #555;
+    color: #fafafe;
     position: absolute;
     left: 0;
     top: 10px;
@@ -107,9 +107,9 @@ input:focus {
 }
 input:focus ~ .i, input:valid ~ .i, .i:hover {
  transform: translate(-10%,-80%);
- color: #333;
+ color: #feeefe;
  backdrop-filter: blur(13px);
- background: rgba(255,255,255,0);
+ background: #0003;
 }
 .invalid {
     border:;
