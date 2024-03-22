@@ -1,4 +1,5 @@
 npm install
-sudo apt-get install postgresql
-sudo pg_ctl -D ./db -l logfile start
+ apt-get install postgresql
+pg_ctl -D ./db -l logfile start
+which pg_ctl
 npm i nodemon -g
