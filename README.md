@@ -34,10 +34,13 @@ To run the user login system locally, follow these steps:
     ```bash
     sh setup.sh
     ```
-
-2. Start the application:
+2. Start postgres server
+   ```bash
+   sh pg_sql.sh start
+   ```
+3. Start the application:
     ```bash
-    npm run start
+    npm run dev
     ```
 
 This will initialize the necessary dependencies and launch the application locally. Visit [http://localhost:port](http://localhost:port) in your web browser to access the local instance of the user login system.
