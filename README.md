@@ -33,7 +33,7 @@ To run the user login system locally, follow these steps:
    ```bash
    git clone https://github.com/sankar-raul/nodeLogin
    ```
-2. Move to the project directory
+2. Move to the project directory:
    ```bash
    cd nodeLogin
    ```
