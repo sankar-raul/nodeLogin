@@ -161,3 +161,5 @@
 2024-03-22 19:59:15.354 IST [5901] HINT:  Is another postmaster (PID 5880) running in data directory "/data/data/com.termux/files/home/nodeLogin/db"?
 2024-03-22 20:04:13.192 IST [5883] LOG:  checkpoint starting: time
 2024-03-22 20:04:13.229 IST [5883] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.002 s, total=0.038 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1554D18, redo lsn=0/1554CE0
+2024-03-22 23:55:57.756 IST [11076] FATAL:  could not open directory "pg_notify": No such file or directory
+2024-03-22 23:55:57.762 IST [11076] LOG:  database system is shut down
