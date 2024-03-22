@@ -50,7 +50,7 @@ To run the user login system locally, follow these steps:
     npm run dev
     ```
 
-This will initialize the necessary dependencies and launch the application locally. Visit [http://localhost:port](http://localhost:port) in your web browser to access the local instance of the user login system.
+This will initialize the necessary dependencies and launch the application locally. Visit [http://localhost:8080](http://localhost:8080) in your web browser to access the local instance of the user login system.
 
 ## Documentation Status: Under Process
 This documentation is currently under process, and additional content will be added soon. Thank you for your understanding.
