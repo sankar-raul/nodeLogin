@@ -1,5 +1,5 @@
 .blooming {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0px;
     width: 75%;
@@ -11,6 +11,19 @@
     justify-content: right;
     max-height: 100vh;
 }
+.blooming2 {
+    position: fixed;
+    top: 0;
+    top: 0px;
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    z-index: ;
+    border-radius: 0 0 0 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    max-height: 100vh;
+}
 .circle {
  position: absolute;
  width: 0%;
@@ -18,8 +31,11 @@
  aspect-ratio: 1 / 1;
  transform: translate(50%,-50%);
  animation: animate 6s linear infinite;
- background: #0dd7;
- filter: hue-rotate(200deg);
+ background: rgba(18, 182, 252,.1);
+ filter: hue-rotate(0deg);
+}
+.blooming2 .circle {
+ transform: translate(-50%,-50%);
 }
 @keyframes animate {
     0% {
