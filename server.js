@@ -121,7 +121,7 @@ app.post("/users/register", async (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running on port http://localhost:${PORT}`);
 /*  exec("xdg-open http://localhost:8080", (error, stdout, stderr) => {
   if (error) {
     console.error(`Error: ${error.message}`);
