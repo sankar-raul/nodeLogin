@@ -1,0 +1,122 @@
+2024-03-22 17:06:52.458 IST [14508] FATAL:  lock file "postmaster.pid" already exists
+2024-03-22 17:06:52.458 IST [14508] HINT:  Is another postmaster (PID 14456) running in data directory "/data/data/com.termux/files/home/nodeLogin/db"?
+2024-03-22 17:07:00.783 IST [14534] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-22 17:07:00.785 IST [14534] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-22 17:07:00.791 IST [14534] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-22 17:07:00.800 IST [14539] LOG:  database system was interrupted; last known up at 2024-03-22 17:06:19 IST
+2024-03-22 17:07:00.955 IST [14539] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-03-22 17:07:00.969 IST [14539] LOG:  redo starts at 0/153AF48
+2024-03-22 17:07:00.969 IST [14539] LOG:  invalid record length at 0/153AF80: expected at least 24, got 0
+2024-03-22 17:07:00.969 IST [14539] LOG:  redo done at 0/153AF48 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-03-22 17:07:00.975 IST [14537] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-03-22 17:07:00.995 IST [14537] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.002 s, total=0.023 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/153AF80, redo lsn=0/153AF80
+2024-03-22 17:07:01.003 IST [14534] LOG:  database system is ready to accept connections
+2024-03-22 17:09:35.996 IST [15239] FATAL:  role "postgres" does not exist
+2024-03-22 17:09:45.739 IST [15249] FATAL:  database "pistgres" does not exist
+2024-03-22 17:09:56.731 IST [15267] FATAL:  lock file "postmaster.pid" already exists
+2024-03-22 17:09:56.731 IST [15267] HINT:  Is another postmaster (PID 14534) running in data directory "/data/data/com.termux/files/home/nodeLogin/db"?
+2024-03-22 17:11:11.634 IST [15276] ERROR:  role "sankar" already exists
+2024-03-22 17:11:11.634 IST [15276] STATEMENT:  CREATE ROLE sankar WITH LOGIN PASSWORD 'sankarraul';
+2024-03-22 17:12:00.997 IST [14537] LOG:  checkpoint starting: time
+2024-03-22 17:12:01.426 IST [14537] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.409 s, sync=0.006 s, total=0.429 s; sync files=5, longest=0.004 s, average=0.002 s; distance=3 kB, estimate=3 kB; lsn=0/153BD58, redo lsn=0/153BD20
+2024-03-22 17:12:44.965 IST [15276] ERROR:  role "sankar" already exists
+2024-03-22 17:12:44.965 IST [15276] STATEMENT:  CREATE ROLE sankar WITH LOGIN PASSWORD 'sankarraul';
+2024-03-22 17:16:13.170 IST [15850] FATAL:  database "nodelogin" does not exist
+2024-03-22 17:16:22.362 IST [15857] FATAL:  database "nodelogin" does not exist
+2024-03-22 17:17:00.473 IST [14537] LOG:  checkpoint starting: time
+2024-03-22 17:17:01.118 IST [14537] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.615 s, sync=0.009 s, total=0.646 s; sync files=5, longest=0.004 s, average=0.002 s; distance=1 kB, estimate=3 kB; lsn=0/153C3F0, redo lsn=0/153C3B8
+2024-03-22 17:17:41.134 IST [16252] ERROR:  permission denied for table users
+2024-03-22 17:17:41.134 IST [16252] STATEMENT:  SELECT * FROM users WHERE email = $1
+2024-03-22 17:19:15.605 IST [16513] ERROR:  value too long for type character varying(50)
+2024-03-22 17:19:15.605 IST [16513] STATEMENT:  INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+2024-03-22 17:21:32.943 IST [17153] ERROR:  value too long for type character varying(50)
+2024-03-22 17:21:32.943 IST [17153] STATEMENT:  INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+2024-03-22 17:22:00.202 IST [14537] LOG:  checkpoint starting: time
+2024-03-22 17:22:00.648 IST [14537] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.417 s, sync=0.007 s, total=0.447 s; sync files=5, longest=0.004 s, average=0.002 s; distance=2 kB, estimate=3 kB; lsn=0/153CC90, redo lsn=0/153CC58
+2024-03-22 17:22:07.934 IST [17195] FATAL:  database "users" does not exist
+2024-03-22 17:24:34.013 IST [17209] ERROR:  permission denied for sequence users_id_seq
+2024-03-22 17:24:34.013 IST [17209] STATEMENT:  INSERT INTO users (name, email, password)
+	VALUES ('Sankar Raul', 'raulsankar99@gmail.com', 'sankar1');
+2024-03-22 17:25:16.897 IST [17209] ERROR:  permission denied for sequence users_id_seq
+2024-03-22 17:25:16.897 IST [17209] STATEMENT:  INSERT INTO users (name, email, password)
+	VALUES ('Sankar Raul', 'raulsankar99@gmail.com', 'sankar1');
+2024-03-22 17:26:14.167 IST [17209] ERROR:  permission denied for sequence users_id_seq
+2024-03-22 17:26:14.167 IST [17209] STATEMENT:  GRANT USAGE, SELECT ON SEQUENCE users_id_seq TO sankar;
+2024-03-22 17:26:42.458 IST [17209] WARNING:  no privileges were granted for "users_id_seq"
+2024-03-22 17:26:57.264 IST [17209] ERROR:  syntax error at or near "ls" at character 1
+2024-03-22 17:26:57.264 IST [17209] STATEMENT:  ls
+	;
+2024-03-22 17:27:00.749 IST [14537] LOG:  checkpoint starting: time
+2024-03-22 17:27:01.384 IST [14537] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.615 s, sync=0.003 s, total=0.636 s; sync files=7, longest=0.003 s, average=0.001 s; distance=3 kB, estimate=3 kB; lsn=0/153D928, redo lsn=0/153D8F0
+2024-03-22 17:27:23.324 IST [17641] ERROR:  value too long for type character varying(50)
+2024-03-22 17:27:23.324 IST [17641] STATEMENT:  INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+2024-03-22 17:30:58.332 IST [18033] FATAL:  role "sa" does not exist
+2024-03-22 17:32:00.481 IST [14537] LOG:  checkpoint starting: time
+2024-03-22 17:32:00.806 IST [14537] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.308 s, sync=0.005 s, total=0.325 s; sync files=4, longest=0.003 s, average=0.002 s; distance=2 kB, estimate=3 kB; lsn=0/153E508, redo lsn=0/153E4D0
+2024-03-22 17:32:19.542 IST [18099] ERROR:  value too long for type character varying(50)
+2024-03-22 17:32:19.542 IST [18099] STATEMENT:  INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+2024-03-22 17:39:14.183 IST [18517] ERROR:  value too long for type character varying(50)
+2024-03-22 17:39:14.183 IST [18517] STATEMENT:  INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+2024-03-22 17:41:33.397 IST [19201] ERROR:  value too long for type character varying(50)
+2024-03-22 17:41:33.397 IST [19201] STATEMENT:  INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+2024-03-22 17:41:38.393 IST [19216] ERROR:  value too long for type character varying(50)
+2024-03-22 17:41:38.393 IST [19216] STATEMENT:  INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+2024-03-22 17:41:39.632 IST [19221] ERROR:  value too long for type character varying(50)
+2024-03-22 17:41:39.632 IST [19221] STATEMENT:  INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+2024-03-22 17:41:39.809 IST [19229] ERROR:  value too long for type character varying(50)
+2024-03-22 17:41:39.809 IST [19229] STATEMENT:  INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+2024-03-22 17:41:39.836 IST [19231] ERROR:  value too long for type character varying(50)
+2024-03-22 17:41:39.836 IST [19231] STATEMENT:  INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+2024-03-22 17:42:01.005 IST [14537] LOG:  checkpoint starting: time
+2024-03-22 17:42:01.151 IST [14537] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.117 s, sync=0.004 s, total=0.147 s; sync files=2, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=2 kB; lsn=0/153E890, redo lsn=0/153E858
+2024-03-22 17:42:53.908 IST [18039] ERROR:  syntax error at or near "`" at character 1
+2024-03-22 17:42:53.908 IST [18039] STATEMENT:  `INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+	select * from users;
+2024-03-22 17:43:50.678 IST [18039] ERROR:  syntax error at or near "`" at character 1
+2024-03-22 17:43:50.678 IST [18039] STATEMENT:  `INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+	select * from users;
+2024-03-22 17:45:00.930 IST [19575] ERROR:  value too long for type character varying(50)
+2024-03-22 17:45:00.930 IST [19575] STATEMENT:  INSERT INTO users (name,email,password) VALUES ($1,$2,$3)
+2024-03-22 17:47:01.161 IST [14537] LOG:  checkpoint starting: time
+2024-03-22 17:47:01.407 IST [14537] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.214 s, sync=0.007 s, total=0.247 s; sync files=3, longest=0.005 s, average=0.003 s; distance=0 kB, estimate=2 kB; lsn=0/153EC10, redo lsn=0/153EBD8
+2024-03-22 17:50:28.355 IST [19481] ERROR:  must be owner of table users
+2024-03-22 17:50:28.355 IST [19481] STATEMENT:  ALTER TABLE users
+	ALTER COLUMN password SET DATA TYPE text;
+2024-03-22 17:56:03.294 IST [19481] ERROR:  syntax error at or near "*" at character 8
+2024-03-22 17:56:03.294 IST [19481] STATEMENT:  delete *  from users;
+2024-03-22 17:56:21.316 IST [19481] ERROR:  syntax error at or near ";" at character 18
+2024-03-22 17:56:21.316 IST [19481] STATEMENT:  alter table users;
+2024-03-22 17:56:31.993 IST [19481] ERROR:  syntax error at or near ";" at character 13
+2024-03-22 17:56:31.993 IST [19481] STATEMENT:  alter table
+	;
+2024-03-22 17:57:01.605 IST [14537] LOG:  checkpoint starting: time
+2024-03-22 17:57:04.376 IST [14537] LOG:  checkpoint complete: wrote 28 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.733 s, sync=0.021 s, total=2.772 s; sync files=25, longest=0.004 s, average=0.001 s; distance=86 kB, estimate=86 kB; lsn=0/1554460, redo lsn=0/1554428
+2024-03-22 17:59:17.790 IST [14534] LOG:  received fast shutdown request
+2024-03-22 17:59:17.803 IST [14534] LOG:  aborting any active transactions
+2024-03-22 17:59:17.803 IST [19481] FATAL:  terminating connection due to administrator command
+2024-03-22 17:59:17.803 IST [20066] FATAL:  terminating connection due to administrator command
+2024-03-22 17:59:17.804 IST [15710] FATAL:  terminating connection due to administrator command
+2024-03-22 17:59:17.811 IST [14534] LOG:  background worker "logical replication launcher" (PID 14542) exited with exit code 1
+2024-03-22 17:59:17.813 IST [14537] LOG:  shutting down
+2024-03-22 17:59:17.816 IST [14537] LOG:  checkpoint starting: shutdown immediate
+2024-03-22 17:59:17.837 IST [14537] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.004 s, total=0.024 s; sync files=3, longest=0.003 s, average=0.002 s; distance=1 kB, estimate=77 kB; lsn=0/15548C0, redo lsn=0/15548C0
+2024-03-22 17:59:17.853 IST [14534] LOG:  database system is shut down
+2024-03-22 18:02:03.403 IST [21575] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-22 18:02:03.406 IST [21575] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-22 18:02:03.411 IST [21575] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-22 18:02:03.423 IST [21580] LOG:  database system was shut down at 2024-03-22 17:59:17 IST
+2024-03-22 18:02:03.451 IST [21575] LOG:  database system is ready to accept connections
+2024-03-22 18:02:40.474 IST [21575] LOG:  received fast shutdown request
+2024-03-22 18:02:40.478 IST [21575] LOG:  aborting any active transactions
+2024-03-22 18:02:40.485 IST [21575] LOG:  background worker "logical replication launcher" (PID 21583) exited with exit code 1
+2024-03-22 18:02:40.485 IST [21578] LOG:  shutting down
+2024-03-22 18:02:40.488 IST [21578] LOG:  checkpoint starting: shutdown immediate
+2024-03-22 18:02:40.520 IST [21578] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.005 s, total=0.035 s; sync files=3, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1554970, redo lsn=0/1554970
+2024-03-22 18:02:40.540 IST [21575] LOG:  database system is shut down
+2024-03-22 18:04:14.617 IST [21761] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-22 18:04:14.619 IST [21761] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-22 18:04:14.629 IST [21761] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-22 18:04:14.644 IST [21766] LOG:  database system was shut down at 2024-03-22 18:02:40 IST
+2024-03-22 18:04:14.664 IST [21761] LOG:  database system is ready to accept connections
+2024-03-22 18:09:14.715 IST [21764] LOG:  checkpoint starting: time
+2024-03-22 18:09:14.764 IST [21764] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.018 s, sync=0.005 s, total=0.050 s; sync files=2, longest=0.005 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/1554A58, redo lsn=0/1554A20

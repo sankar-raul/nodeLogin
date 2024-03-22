@@ -101,13 +101,16 @@ app.post("/users/register", async (req, res) => {
                     //console.log(results.rows);
                     if (results.rows.length > 0) {
                         res.send({msg: `${email} allready exits`});
+       return;
                     } else {
                         pool.query(
                             `INSERT INTO users (name,email,password) VALUES ($1,$2,$3)`, [name, email, hashedPassword], (err, results) => {
                                 if (err) {
-                                    res.send({msg: "error"});
+                                    res.send({msg: err});
+  return;
                                 }
                                 res.send({msg: "done"});
+  return;
                             }
                         );
                     }
