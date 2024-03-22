@@ -190,3 +190,26 @@
 2024-03-23 00:32:19.949 IST [20852] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
 2024-03-23 00:32:19.964 IST [20858] LOG:  database system was shut down at 2024-03-23 00:31:58 IST
 2024-03-23 00:32:19.991 IST [20852] LOG:  database system is ready to accept connections
+2024-03-23 00:36:41.467 IST [21459] ERROR:  role "dbuser" already exists
+2024-03-23 00:36:41.467 IST [21459] STATEMENT:  CREATE USER dbuser WITH PASSWORD 'password' SUPERUSER;
+2024-03-23 00:36:41.514 IST [21465] ERROR:  relation "users" already exists
+2024-03-23 00:36:41.514 IST [21465] STATEMENT:  CREATE TABLE users (id BIGSERIAL,email VARCHAR(30),name VARCHAR(30),password TEXT);
+2024-03-23 00:36:41.532 IST [20852] LOG:  received fast shutdown request
+2024-03-23 00:36:41.538 IST [20852] LOG:  aborting any active transactions
+2024-03-23 00:36:41.544 IST [20852] LOG:  background worker "logical replication launcher" (PID 20861) exited with exit code 1
+2024-03-23 00:36:41.545 IST [20856] LOG:  shutting down
+2024-03-23 00:36:41.548 IST [20856] LOG:  checkpoint starting: shutdown immediate
+2024-03-23 00:36:41.603 IST [20856] LOG:  checkpoint complete: wrote 57 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.018 s, sync=0.027 s, total=0.058 s; sync files=29, longest=0.006 s, average=0.001 s; distance=250 kB, estimate=250 kB; lsn=0/154EAA0, redo lsn=0/154EAA0
+2024-03-23 00:36:41.621 IST [20852] LOG:  database system is shut down
+2024-03-23 00:37:06.058 IST [21533] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-23 00:37:06.060 IST [21533] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-23 00:37:06.069 IST [21533] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-23 00:37:06.082 IST [21542] LOG:  database system was shut down at 2024-03-23 00:36:41 IST
+2024-03-23 00:37:06.111 IST [21533] LOG:  database system is ready to accept connections
+2024-03-23 00:37:31.894 IST [21601] LOG:  could not receive data from client: Connection reset by peer
+2024-03-23 00:38:04.634 IST [22048] LOG:  could not receive data from client: Connection reset by peer
+2024-03-23 00:39:10.948 IST [23078] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-23 00:39:10.949 IST [23078] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-23 00:39:10.959 IST [23078] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-23 00:39:10.969 IST [23083] LOG:  database system was shut down at 2024-03-23 00:38:47 IST
+2024-03-23 00:39:10.989 IST [23078] LOG:  database system is ready to accept connections
