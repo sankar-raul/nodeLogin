@@ -185,3 +185,8 @@
 2024-03-23 00:22:19.068 IST [15485] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
 2024-03-23 00:22:19.079 IST [15490] LOG:  database system was shut down at 2024-03-23 00:21:57 IST
 2024-03-23 00:22:19.101 IST [15485] LOG:  database system is ready to accept connections
+2024-03-23 00:32:19.939 IST [20852] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-23 00:32:19.942 IST [20852] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-23 00:32:19.949 IST [20852] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-23 00:32:19.964 IST [20858] LOG:  database system was shut down at 2024-03-23 00:31:58 IST
+2024-03-23 00:32:19.991 IST [20852] LOG:  database system is ready to accept connections
