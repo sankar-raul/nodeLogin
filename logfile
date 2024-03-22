@@ -131,3 +131,33 @@
 2024-03-22 19:00:27.848 IST [29207] LOG:  checkpoint starting: end-of-recovery immediate wait
 2024-03-22 19:00:27.873 IST [29207] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.003 s, total=0.028 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1554B08, redo lsn=0/1554B08
 2024-03-22 19:00:27.886 IST [29204] LOG:  database system is ready to accept connections
+2024-03-22 19:58:18.287 IST [5754] FATAL:  lock file "postmaster.pid" already exists
+2024-03-22 19:58:18.287 IST [5754] HINT:  Is another postmaster (PID 29204) running in data directory "/data/data/com.termux/files/home/nodeLogin/db"?
+2024-03-22 19:58:29.806 IST [29204] LOG:  received fast shutdown request
+2024-03-22 19:58:29.809 IST [29204] LOG:  aborting any active transactions
+2024-03-22 19:58:29.815 IST [29204] LOG:  background worker "logical replication launcher" (PID 29212) exited with exit code 1
+2024-03-22 19:58:29.817 IST [29207] LOG:  shutting down
+2024-03-22 19:58:29.822 IST [29207] LOG:  checkpoint starting: shutdown immediate
+2024-03-22 19:58:29.846 IST [29207] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.001 s, total=0.030 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1554BB8, redo lsn=0/1554BB8
+2024-03-22 19:58:29.863 IST [29204] LOG:  database system is shut down
+2024-03-22 19:58:42.142 IST [5796] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-22 19:58:42.144 IST [5796] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-22 19:58:42.150 IST [5796] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-22 19:58:42.166 IST [5801] LOG:  database system was shut down at 2024-03-22 19:58:29 IST
+2024-03-22 19:58:42.196 IST [5796] LOG:  database system is ready to accept connections
+2024-03-22 19:58:44.992 IST [5796] LOG:  received fast shutdown request
+2024-03-22 19:58:44.996 IST [5796] LOG:  aborting any active transactions
+2024-03-22 19:58:45.003 IST [5796] LOG:  background worker "logical replication launcher" (PID 5804) exited with exit code 1
+2024-03-22 19:58:45.003 IST [5799] LOG:  shutting down
+2024-03-22 19:58:45.006 IST [5799] LOG:  checkpoint starting: shutdown immediate
+2024-03-22 19:58:45.031 IST [5799] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.002 s, total=0.028 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1554C30, redo lsn=0/1554C30
+2024-03-22 19:58:45.046 IST [5796] LOG:  database system is shut down
+2024-03-22 19:59:13.119 IST [5880] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-22 19:59:13.121 IST [5880] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-22 19:59:13.129 IST [5880] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-22 19:59:13.144 IST [5885] LOG:  database system was shut down at 2024-03-22 19:58:45 IST
+2024-03-22 19:59:13.162 IST [5880] LOG:  database system is ready to accept connections
+2024-03-22 19:59:15.354 IST [5901] FATAL:  lock file "postmaster.pid" already exists
+2024-03-22 19:59:15.354 IST [5901] HINT:  Is another postmaster (PID 5880) running in data directory "/data/data/com.termux/files/home/nodeLogin/db"?
+2024-03-22 20:04:13.192 IST [5883] LOG:  checkpoint starting: time
+2024-03-22 20:04:13.229 IST [5883] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.002 s, total=0.038 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1554D18, redo lsn=0/1554CE0
