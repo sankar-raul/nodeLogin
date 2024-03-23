@@ -37,15 +37,19 @@ To run the user login system locally, follow these steps:
    ```bash
    cd nodeLogin
    ```
-3. Run the setup script:
+3. Grant executable permission:
+   ```bash
+   chmod +x *
+   ```
+4. Run the setup script:
     ```bash
     ./setup.sh
     ```
-4. Start postgres server
+5. Start postgres server
    ```bash
    ./pg_sql.sh start
    ```
-5. Start the application:
+6. Start the application:
     ```bash
     npm run dev
     ```
