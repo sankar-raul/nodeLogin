@@ -1,3 +1,4 @@
+mkdir db
 apt install postgresql
 pg_ctl initdb -D ./db
 pg_ctl -D ./db start

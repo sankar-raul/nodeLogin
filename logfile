@@ -257,3 +257,15 @@
 2024-03-23 12:20:14.269 IST [19672] LOG:  could not receive data from client: Connection reset by peer
 2024-03-23 12:33:15.492 IST [10877] LOG:  checkpoint starting: time
 2024-03-23 12:33:15.736 IST [10877] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.210 s, sync=0.010 s, total=0.245 s; sync files=3, longest=0.008 s, average=0.004 s; distance=1 kB, estimate=1 kB; lsn=0/155CDC0, redo lsn=0/155CD88
+2024-03-23 21:37:26.011 IST [7681] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-23 21:37:26.013 IST [7681] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-23 21:37:26.021 IST [7681] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-23 21:37:26.032 IST [7687] LOG:  database system was shut down at 2024-03-23 21:36:55 IST
+2024-03-23 21:37:26.056 IST [7681] LOG:  database system is ready to accept connections
+2024-03-23 21:40:13.278 IST [7681] LOG:  received fast shutdown request
+2024-03-23 21:40:13.280 IST [7681] LOG:  aborting any active transactions
+2024-03-23 21:40:13.287 IST [7681] LOG:  background worker "logical replication launcher" (PID 7690) exited with exit code 1
+2024-03-23 21:40:13.287 IST [7684] LOG:  shutting down
+2024-03-23 21:40:13.290 IST [7684] LOG:  checkpoint starting: shutdown immediate
+2024-03-23 21:40:13.334 IST [7684] LOG:  checkpoint complete: wrote 47 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.021 s, total=0.047 s; sync files=19, longest=0.005 s, average=0.002 s; distance=200 kB, estimate=200 kB; lsn=0/15423B0, redo lsn=0/15423B0
+2024-03-23 21:40:13.349 IST [7681] LOG:  database system is shut down
