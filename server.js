@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const path = require("path")
 const { exec } = require('child_process');
 const PORT = process.env.PORT || 8080;
 const {
@@ -10,7 +11,6 @@ const session = require('express-session');
 const flash = require('express-flash');
 app.use(express.json())
 app.use(express.static("public"));
-
 app.use(express.urlencoded({
     extended: false
 }));
@@ -118,19 +118,10 @@ app.post("/users/register", async (req, res) => {
             }
         );
 });
-
+app.use((req, res, next) => {
+    res.status(404).sendFile(path.join(__dirname, 'public',"404.html"))
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port http://localhost:${PORT}`);
-/*  exec("xdg-open http://localhost:8080", (error, stdout, stderr) => {
-  if (error) {
-    console.error(`Error: ${error.message}`);
-    return;
-  }
-
-  if (stderr) {
-    console.error(`stderr: ${stderr}`);
-    return;
-  }
-});*/
 });

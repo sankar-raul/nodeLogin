@@ -237,3 +237,23 @@
 2024-03-23 03:46:45.946 IST [16811] LOG:  checkpoint starting: end-of-recovery immediate wait
 2024-03-23 03:46:45.969 IST [16811] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.002 s, total=0.026 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/155BDB8, redo lsn=0/155BDB8
 2024-03-23 03:46:45.979 IST [16808] LOG:  database system is ready to accept connections
+2024-03-23 03:51:45.507 IST [16811] LOG:  checkpoint starting: time
+2024-03-23 03:51:45.746 IST [16811] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.212 s, sync=0.005 s, total=0.240 s; sync files=3, longest=0.004 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/155C0E0, redo lsn=0/155C0A8
+2024-03-23 11:28:12.980 IST [10874] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-23 11:28:12.983 IST [10874] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-23 11:28:13.001 IST [10874] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-23 11:28:13.018 IST [10879] LOG:  database system was interrupted; last known up at 2024-03-23 03:51:45 IST
+2024-03-23 11:28:13.192 IST [10879] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-03-23 11:28:13.201 IST [10879] LOG:  redo starts at 0/155C0A8
+2024-03-23 11:28:13.201 IST [10879] LOG:  invalid record length at 0/155C190: expected at least 24, got 0
+2024-03-23 11:28:13.201 IST [10879] LOG:  redo done at 0/155C158 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-03-23 11:28:13.208 IST [10877] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-03-23 11:28:13.234 IST [10877] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.003 s, total=0.029 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/155C190, redo lsn=0/155C190
+2024-03-23 11:28:13.246 IST [10874] LOG:  database system is ready to accept connections
+2024-03-23 11:43:13.437 IST [10877] LOG:  checkpoint starting: time
+2024-03-23 11:43:14.196 IST [10877] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.721 s, sync=0.012 s, total=0.760 s; sync files=7, longest=0.006 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/155C528, redo lsn=0/155C4F0
+2024-03-23 11:48:13.289 IST [10877] LOG:  checkpoint starting: time
+2024-03-23 11:48:13.527 IST [10877] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.211 s, sync=0.006 s, total=0.239 s; sync files=3, longest=0.004 s, average=0.002 s; distance=1 kB, estimate=1 kB; lsn=0/155C938, redo lsn=0/155C900
+2024-03-23 12:20:14.269 IST [19672] LOG:  could not receive data from client: Connection reset by peer
+2024-03-23 12:33:15.492 IST [10877] LOG:  checkpoint starting: time
+2024-03-23 12:33:15.736 IST [10877] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.210 s, sync=0.010 s, total=0.245 s; sync files=3, longest=0.008 s, average=0.004 s; distance=1 kB, estimate=1 kB; lsn=0/155CDC0, redo lsn=0/155CD88
