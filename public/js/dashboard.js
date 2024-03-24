@@ -9,6 +9,7 @@ const placeName = () => {
     let data = localStorage.getItem("user");
     data = JSON.parse(data);
     document.getElementById("name").innerHTML = data.name;
+    document.getElementsByClassName("name")[0].innerHTML = data.name;
 }
 if (localStorage.getItem("user")) {
     placeName();

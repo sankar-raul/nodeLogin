@@ -269,3 +269,150 @@
 2024-03-23 21:40:13.290 IST [7684] LOG:  checkpoint starting: shutdown immediate
 2024-03-23 21:40:13.334 IST [7684] LOG:  checkpoint complete: wrote 47 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.021 s, total=0.047 s; sync files=19, longest=0.005 s, average=0.002 s; distance=200 kB, estimate=200 kB; lsn=0/15423B0, redo lsn=0/15423B0
 2024-03-23 21:40:13.349 IST [7681] LOG:  database system is shut down
+2024-03-24 00:40:57.569 IST [25151] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-24 00:40:57.572 IST [25151] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-24 00:40:57.581 IST [25151] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-24 00:40:57.600 IST [25157] LOG:  database system was shut down at 2024-03-24 00:40:37 IST
+2024-03-24 00:40:57.625 IST [25151] LOG:  database system is ready to accept connections
+2024-03-24 00:41:12.767 IST [25174] LOG:  could not receive data from client: Connection reset by peer
+2024-03-24 00:45:57.698 IST [25155] LOG:  checkpoint starting: time
+2024-03-24 00:46:02.180 IST [25155] LOG:  checkpoint complete: wrote 47 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.440 s, sync=0.016 s, total=4.482 s; sync files=19, longest=0.005 s, average=0.001 s; distance=200 kB, estimate=200 kB; lsn=0/1542420, redo lsn=0/15423E8
+2024-03-24 00:53:30.403 IST [26224] LOG:  could not receive data from client: Connection reset by peer
+2024-03-24 00:54:50.612 IST [26339] LOG:  could not receive data from client: Connection reset by peer
+2024-03-24 02:55:49.080 IST [11146] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-24 02:55:49.085 IST [11146] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-24 02:55:49.091 IST [11146] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-24 02:55:49.106 IST [11152] LOG:  database system was shut down at 2024-03-24 02:55:17 IST
+2024-03-24 02:55:49.129 IST [11146] LOG:  database system is ready to accept connections
+2024-03-24 02:55:58.294 IST [11183] LOG:  could not receive data from client: Connection reset by peer
+2024-03-24 02:56:00.602 IST [11202] LOG:  could not receive data from client: Connection reset by peer
+2024-03-24 02:56:03.629 IST [11212] LOG:  could not receive data from client: Connection reset by peer
+2024-03-24 02:56:05.184 IST [11217] LOG:  could not receive data from client: Connection reset by peer
+2024-03-24 03:00:49.186 IST [11150] LOG:  checkpoint starting: time
+2024-03-24 03:00:49.527 IST [11150] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.311 s, sync=0.010 s, total=0.341 s; sync files=5, longest=0.005 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/154EF20, redo lsn=0/154EEE8
+2024-03-24 03:08:20.870 IST [12038] FATAL:  terminating connection due to unexpected postmaster exit
+2024-03-24 03:09:15.463 IST [12992] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-24 03:09:15.474 IST [12992] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-24 03:09:15.497 IST [12992] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-24 03:09:15.522 IST [12997] LOG:  database system was interrupted; last known up at 2024-03-24 03:00:49 IST
+2024-03-24 03:09:15.658 IST [12997] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-03-24 03:09:15.667 IST [12997] LOG:  redo starts at 0/154EEE8
+2024-03-24 03:09:15.667 IST [12997] LOG:  invalid record length at 0/154EFD0: expected at least 24, got 0
+2024-03-24 03:09:15.667 IST [12997] LOG:  redo done at 0/154EF98 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-03-24 03:09:15.675 IST [12995] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-03-24 03:09:15.703 IST [12995] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.003 s, total=0.030 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/154EFD0, redo lsn=0/154EFD0
+2024-03-24 03:09:15.721 IST [12992] LOG:  database system is ready to accept connections
+2024-03-24 03:14:16.483 IST [12995] LOG:  checkpoint starting: time
+2024-03-24 03:14:16.619 IST [12995] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.109 s, sync=0.006 s, total=0.137 s; sync files=2, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/154F3A8, redo lsn=0/154F370
+2024-03-24 03:18:19.119 IST [13006] ERROR:  syntax error at or near ")" at character 93
+2024-03-24 03:18:19.119 IST [13006] STATEMENT:  create table love_life (
+	id int,
+	crush_name varchar(40),
+	msg text,
+	crush_email varchar(40),
+	);
+2024-03-24 03:18:43.273 IST [13006] ERROR:  relation "crush_name" does not exist at character 15
+2024-03-24 03:18:43.273 IST [13006] STATEMENT:  select * from crush_name;
+2024-03-24 03:19:16.719 IST [12995] LOG:  checkpoint starting: time
+2024-03-24 03:19:18.974 IST [12995] LOG:  checkpoint complete: wrote 23 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.225 s, sync=0.008 s, total=2.255 s; sync files=20, longest=0.005 s, average=0.001 s; distance=114 kB, estimate=114 kB; lsn=0/156BE50, redo lsn=0/156BE18
+2024-03-24 03:25:00.156 IST [13006] ERROR:  column "crush_name" of relation "users" does not exist at character 23
+2024-03-24 03:25:00.156 IST [13006] STATEMENT:  INSERT INTO users (id,crush_name,msg,crush_email) VALUES (1,'Sonali','I love you Sona','sona@gmail.com');
+2024-03-24 03:30:26.985 IST [13006] ERROR:  column reference "id" is ambiguous at character 48
+2024-03-24 03:30:26.985 IST [13006] STATEMENT:  select * from love_life,users as details
+	where id = 1;
+2024-03-24 03:30:54.681 IST [12995] LOG:  checkpoint starting: time
+2024-03-24 03:30:54.808 IST [12995] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.107 s, sync=0.006 s, total=0.127 s; sync files=2, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=103 kB; lsn=0/156C018, redo lsn=0/156BFC8
+2024-03-24 03:30:57.488 IST [13006] ERROR:  syntax error at or near "=" at character 61
+2024-03-24 03:30:57.488 IST [13006] STATEMENT:  select * from love_life,users as details
+	where users.id = 1 = love_life.id;
+2024-03-24 03:31:07.093 IST [13006] ERROR:  invalid reference to FROM-clause entry for table "users" at character 48
+2024-03-24 03:31:07.093 IST [13006] HINT:  Perhaps you meant to reference the table alias "details".
+2024-03-24 03:31:07.093 IST [13006] STATEMENT:  select * from love_life,users as details
+	where users.id = love_life.id;
+2024-03-24 03:31:30.595 IST [13006] ERROR:  invalid reference to FROM-clause entry for table "users" at character 48
+2024-03-24 03:31:30.595 IST [13006] HINT:  Perhaps you meant to reference the table alias "details".
+2024-03-24 03:31:30.595 IST [13006] STATEMENT:  select * from love_life,users as details
+	where users.id = 1 ;
+2024-03-24 03:32:36.782 IST [13006] ERROR:  column love_life.crush does not exist at character 19
+2024-03-24 03:32:36.782 IST [13006] STATEMENT:  select users.name,love_life.crush from love_life,users
+	where users.id = 1;
+2024-03-24 03:32:52.136 IST [13006] ERROR:  column love_life.crush does not exist at character 19
+2024-03-24 03:32:52.136 IST [13006] STATEMENT:  select users.name,love_life.crush from love_life,users
+	where users.id = 1;
+2024-03-24 03:36:40.674 IST [13006] ERROR:  operator does not exist: bigint = character varying at character 103
+2024-03-24 03:36:40.674 IST [13006] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2024-03-24 03:36:40.674 IST [13006] STATEMENT:  select users.name as boyfriend,love_life.crush_name as girlfriend from love_life,users
+	where users.id = love_life.crush_name;
+2024-03-24 03:40:54.966 IST [12995] LOG:  checkpoint starting: time
+2024-03-24 03:40:55.211 IST [12995] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.216 s, sync=0.005 s, total=0.245 s; sync files=3, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=92 kB; lsn=0/156C250, redo lsn=0/156C218
+2024-03-24 03:43:03.231 IST [13006] ERROR:  relation "crush_name" does not exist at character 8
+2024-03-24 03:43:03.231 IST [13006] STATEMENT:  UPDATE crush_name
+	SET id = 2
+	WHERE id = 1;
+2024-03-24 03:45:54.313 IST [12995] LOG:  checkpoint starting: time
+2024-03-24 03:45:54.749 IST [12995] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.412 s, sync=0.007 s, total=0.437 s; sync files=4, longest=0.003 s, average=0.002 s; distance=1 kB, estimate=83 kB; lsn=0/156C720, redo lsn=0/156C6E8
+2024-03-24 03:46:19.462 IST [13006] ERROR:  invalid input syntax for type integer: "I love you Kuchu" at character 27
+2024-03-24 03:46:19.462 IST [13006] STATEMENT:  UPDATE love_life
+	SET id = 'I love you Kuchu'
+	WHERE crush_name like 'So%';
+2024-03-24 03:50:54.755 IST [12995] LOG:  checkpoint starting: time
+2024-03-24 03:50:54.890 IST [12995] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.109 s, sync=0.006 s, total=0.136 s; sync files=2, longest=0.005 s, average=0.003 s; distance=1 kB, estimate=75 kB; lsn=0/156CDF0, redo lsn=0/156CDB8
+2024-03-24 04:00:55.234 IST [12995] LOG:  checkpoint starting: time
+2024-03-24 04:00:55.469 IST [12995] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.210 s, sync=0.006 s, total=0.235 s; sync files=3, longest=0.004 s, average=0.002 s; distance=1 kB, estimate=68 kB; lsn=0/156D3A0, redo lsn=0/156D368
+2024-03-24 04:01:27.704 IST [13006] ERROR:  missing FROM-clause entry for table "users" at character 8
+2024-03-24 04:01:27.704 IST [13006] STATEMENT:  SELECT users.id, love_life.id, users.name, love_life.crush_name 
+	FROM love_life
+	WHERE love_life.id = 2;
+2024-03-24 04:09:31.965 IST [19793] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-24 04:09:31.968 IST [19793] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-24 04:09:31.980 IST [19793] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-24 04:09:31.997 IST [19798] LOG:  database system was interrupted; last known up at 2024-03-24 04:00:55 IST
+2024-03-24 04:09:32.178 IST [19798] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-03-24 04:09:32.189 IST [19798] LOG:  redo starts at 0/156D368
+2024-03-24 04:09:32.189 IST [19798] LOG:  invalid record length at 0/156D930: expected at least 24, got 0
+2024-03-24 04:09:32.190 IST [19798] LOG:  redo done at 0/156D8F8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-03-24 04:09:32.195 IST [19796] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-03-24 04:09:32.215 IST [19796] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.004 s, total=0.022 s; sync files=3, longest=0.002 s, average=0.002 s; distance=1 kB, estimate=1 kB; lsn=0/156D930, redo lsn=0/156D930
+2024-03-24 04:09:32.223 IST [19793] LOG:  database system is ready to accept connections
+2024-03-24 04:09:54.435 IST [19820] FATAL:  database "database" does not exist
+2024-03-24 04:11:12.049 IST [19831] ERROR:  syntax error at or near ")" at character 93
+2024-03-24 04:11:12.049 IST [19831] STATEMENT:  create table love_life (
+	id int,
+	crush_name varchar(40),
+	msg text,
+	crush_email varchar(40),
+	);
+2024-03-24 04:11:26.610 IST [19831] ERROR:  relation "love_life" already exists
+2024-03-24 04:11:26.610 IST [19831] STATEMENT:  create table love_life (
+	id int,
+	crush_name varchar(40),
+	msg text,
+	crush_email varchar(40));
+2024-03-24 04:11:40.713 IST [19831] ERROR:  syntax error at or near ")" at character 93
+2024-03-24 04:11:40.713 IST [19831] STATEMENT:  create table love_life (
+	id int,
+	crush_name varchar(40),
+	msg text,
+	crush_email varchar(40),
+	);
+2024-03-24 04:13:04.127 IST [20161] ERROR:  role "dbuser" already exists
+2024-03-24 04:13:04.127 IST [20161] STATEMENT:  CREATE USER dbuser WITH PASSWORD 'password' SUPERUSER;
+2024-03-24 04:13:04.171 IST [20163] ERROR:  relation "users" already exists
+2024-03-24 04:13:04.171 IST [20163] STATEMENT:  CREATE TABLE users (id BIGSERIAL,email VARCHAR(30),name VARCHAR(30),password TEXT);
+2024-03-24 04:13:04.204 IST [20165] ERROR:  relation "love_life" already exists
+2024-03-24 04:13:04.204 IST [20165] STATEMENT:  create table love_life (id int,crush_name varchar(40),msg text,crush_email varchar(40));
+2024-03-24 04:13:04.220 IST [19793] LOG:  received fast shutdown request
+2024-03-24 04:13:04.224 IST [19793] LOG:  aborting any active transactions
+2024-03-24 04:13:04.225 IST [19831] FATAL:  terminating connection due to administrator command
+2024-03-24 04:13:04.230 IST [19793] LOG:  background worker "logical replication launcher" (PID 19801) exited with exit code 1
+2024-03-24 04:13:04.231 IST [19796] LOG:  shutting down
+2024-03-24 04:13:04.234 IST [19796] LOG:  checkpoint starting: shutdown immediate
+2024-03-24 04:13:04.262 IST [19796] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.010 s, total=0.032 s; sync files=14, longest=0.003 s, average=0.001 s; distance=50 kB, estimate=50 kB; lsn=0/157A2A8, redo lsn=0/157A2A8
+2024-03-24 04:13:04.273 IST [19793] LOG:  database system is shut down
+2024-03-24 04:24:14.702 IST [21189] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-03-24 04:24:14.704 IST [21189] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-03-24 04:24:14.715 IST [21189] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-03-24 04:24:14.729 IST [21194] LOG:  database system was shut down at 2024-03-24 04:13:04 IST
+2024-03-24 04:24:14.750 IST [21189] LOG:  database system is ready to accept connections
+2024-03-24 04:29:26.778 IST [21192] LOG:  checkpoint starting: time
+2024-03-24 04:29:27.021 IST [21192] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.217 s, sync=0.008 s, total=0.244 s; sync files=4, longest=0.004 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/157A390, redo lsn=0/157A358
