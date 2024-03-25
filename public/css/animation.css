@@ -1,29 +1,21 @@
+
 .blooming {
     position: fixed;
-    right: 0;
-    top: 0px;
-    width: 75%;
+    top: 50%;
+    left: 50%;
+    height: 50%;
     aspect-ratio: 1 / 1;
-    z-index: ;
+    z-index: -1;
     border-radius: 0 0 0 0;
-    overflow: hidden;
+    overflow: ;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
     max-height: 100vh;
+    border: ;
+    transform: translate(-50%,-50%);
 }
-.blooming2 {
-    position: fixed;
-    top: 0;
-    top: 0px;
-    width: 75%;
-    aspect-ratio: 1 / 1;
-    z-index: ;
-    border-radius: 0 0 0 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: left;
-    max-height: 100vh;
-}
+
 .circle {
  position: absolute;
  width: 0%;
@@ -34,8 +26,8 @@
  background: rgba(18, 182, 252,.1);
  filter: hue-rotate(0deg);
 }
-.blooming2 .circle {
- transform: translate(-50%,-50%);
+.blooming .circle {
+ transform: translate(0%,0%);
 }
 @keyframes animate {
     0% {
