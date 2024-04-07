@@ -416,3 +416,10 @@
 2024-03-24 04:24:14.750 IST [21189] LOG:  database system is ready to accept connections
 2024-03-24 04:29:26.778 IST [21192] LOG:  checkpoint starting: time
 2024-03-24 04:29:27.021 IST [21192] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.217 s, sync=0.008 s, total=0.244 s; sync files=4, longest=0.004 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/157A390, redo lsn=0/157A358
+2024-04-06 12:41:16.544 IST [25554] LOG:  starting PostgreSQL 16.2 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-04-06 12:41:16.546 IST [25554] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-06 12:41:16.555 IST [25554] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-04-06 12:41:16.910 IST [25559] LOG:  database system was shut down at 2024-04-06 12:40:42 IST
+2024-04-06 12:41:16.943 IST [25554] LOG:  database system is ready to accept connections
+2024-04-06 12:46:17.465 IST [25557] LOG:  checkpoint starting: time
+2024-04-06 12:46:19.154 IST [25557] LOG:  checkpoint complete: wrote 19 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.632 s, sync=0.021 s, total=1.690 s; sync files=12, longest=0.008 s, average=0.002 s; distance=34 kB, estimate=34 kB; lsn=0/15239A0, redo lsn=0/1523968

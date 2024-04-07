@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Chakra+Petch:wght@500&family=Orbitron:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 * {
     padding: 0;
     margin: 0;
 }
 body {
     height: 100vh;
-    font-family: Sans-Serif;
+    font-family:'Orbitron', Sans-Serif;
     background: #171a2b;
 }
 ::-webkit-scrollbar {
@@ -25,7 +27,7 @@ body {
 .bt1,.bt2 {
     padding: 7px;
     border: none;
-
+    font-family: 'Sofia';
 }
 .users-auth > .bt1 {
     background: #0add0a;
@@ -129,6 +131,7 @@ body {
     background: linear-gradient(to bottom, #282c56,  #2f3765);
     height: 100vh;
     overflow-y: scroll;
+    font-size: .8rem
 }
 .items > .user-info {
     background: transparent;

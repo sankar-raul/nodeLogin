@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Chakra+Petch:wght@500&family=Orbitron:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 -webkit-autofill { 
     background: rgba(39, 174, 96,0.1);
     outline: 1px solid rgba(39, 174, 96,0.5);
@@ -13,7 +15,7 @@
      text-align: center;
      background: #020303;
      color: #09ffff;
-     font-family: Courier New;
+     font-family: 'Orbitron',Courier new;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -61,6 +63,7 @@
      caret-color: #3498db;
      background: #eee1;
      color: #fafafe;
+     font-family: 'Sofia',roboto;
  }
  input:focus {
      outline: 1px #3498db solid;
@@ -91,6 +94,7 @@
      margin: 14px;
      color: #fff;
      border-color: transparent;
+     font-family: 'Orbitron',roboto;
  }
  #submit-button:hover {
      outline: 4px solid rgba(0,255,0,.2);
@@ -101,6 +105,7 @@
      transition: .5s;
      font-weight: 300;
      color: #f0f0f0;
+     font-family: 'Sofia',roboto;
  }
  #rule:hover {
      text-decoration: underline rgba(255,255,255,.5);
@@ -109,7 +114,6 @@
  #password, #password2, #email, #username{
      padding: 12px 10px;
      width: 90%;
-     
  }
  .i {
      color: #fafafe;
@@ -119,6 +123,7 @@
      margin-left: 10px;
      transition: .4s;
      border-radius: 14px;
+     font-family: 'Sofia',roboto;
  }
  input:focus ~ .i, input:valid ~ .i, .i:hover {
   transform: translate(-10%,-80%);
